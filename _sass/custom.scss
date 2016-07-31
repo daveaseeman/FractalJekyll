@@ -1,0 +1,46 @@
+/* Styles */
+  html,body {
+  height:100%;
+  margin:0;
+}
+
+.full-screen {
+  height:100%;
+  min-height:100%;/*for mozilla*/
+}
+
+html>body .full-screen {
+  height:auto;
+}
+
+#splash {
+  background: url(/assets/img/splash.svg) center center no-repeat $brand-color;
+  background-size: $splash-width $splash-width, contain;
+}
+
+.splash-align {
+  margin: 0% 0% 0% $splash-align;
+}
+
+#open {
+  background: $background-color;
+  border-bottom:.25px solid #DCDCDC;
+  border-top:.25px solid #DCDCDC;
+}
+
+#services {
+  background: $brand-color;
+  border-bottom:.25px solid #DCDCDC;
+  border-top:.25px solid #DCDCDC;
+}
+
+.inline-list {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    li {
+      display: inline;
+    }
+  }
+}

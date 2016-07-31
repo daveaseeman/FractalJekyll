@@ -1,0 +1,9 @@
+title: Fractal Hardware
+email: dave@fractalhardware.com
+description: > # this means to ignore newlines until "baseurl:"
+  Fractal Hardware Design
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://FractalHardware.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
