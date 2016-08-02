@@ -1,7 +1,8 @@
 nav {
   color: $navbar-font-color;
+  position: relative;
   @extend .z-depth-1;
-  background-color: $primary-color;
+  background-color: $brand-color;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-height-mobile;

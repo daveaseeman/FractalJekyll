@@ -13,11 +13,12 @@ html > body .full-screen {
   height: auto; }
 
 #splash {
+  position: relative;
   background: url(/assets/img/splash.svg) center center no-repeat #F0533C;
   background-size: 75% 75%, contain; }
 
 .splash-align {
-  margin: 0% 0% 0% 12.5%; }
+  margin: 0% 12.5% 0% 12.5%; }
 
 #open {
   background: #ffffff;
@@ -26,6 +27,7 @@ html > body .full-screen {
 
 #services {
   background: #F0533C;
+  color: #ffffff;
   border-bottom: .25px solid #DCDCDC;
   border-top: .25px solid #DCDCDC; }
 
@@ -3053,7 +3055,8 @@ nav ul a span.badge {
 
 nav {
   color: #fff;
-  background-color: #ee6e73;
+  position: relative;
+  background-color: #F0533C;
   width: 100%;
   height: 56px;
   line-height: 56px; }

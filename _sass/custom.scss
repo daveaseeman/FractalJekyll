@@ -14,6 +14,7 @@ html>body .full-screen {
 }
 
 #splash {
+  position: relative;
   background: url(/assets/img/splash.svg) center center no-repeat $brand-color;
   background-size: $splash-width $splash-width, contain;
 }
@@ -30,6 +31,7 @@ html>body .full-screen {
 
 #services {
   background: $brand-color;
+  color: $background-color;
   border-bottom:.25px solid #DCDCDC;
   border-top:.25px solid #DCDCDC;
 }
