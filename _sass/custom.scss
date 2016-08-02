@@ -25,15 +25,33 @@ html>body .full-screen {
 
 #open {
   background: $background-color;
-  border-bottom:.25px solid #DCDCDC;
-  border-top:.25px solid #DCDCDC;
+  // border-bottom:.25px solid #DCDCDC;
+  // border-top:.25px solid #DCDCDC;
 }
 
 #services {
+  background: $background-color;
+  // color: $background-color;
+  // border-bottom:.25px solid #DCDCDC;
+  // border-top:.25px solid #DCDCDC;
+}
+
+#footer {
+  padding-top: 50px;
   background: $brand-color;
+  padding-bottom: 5px;
   color: $background-color;
-  border-bottom:.25px solid #DCDCDC;
-  border-top:.25px solid #DCDCDC;
+  a {
+    @extend .white-text;
+  }
+}
+
+.white-link {
+  @extend .white-text;
+}
+
+#sticker {
+  z-index: 9999;
 }
 
 .inline-list {

@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example that shows off a responsive product landing page.">
-    <title>Fractal Hardware</title>
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A layout example that shows off a responsive product landing page.">
+  <title>Fractal Hardware</title>
 
-    <script src="https://use.fontawesome.com/6ad57c0e4d.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <script src="https://use.fontawesome.com/6ad57c0e4d.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="/assets/js/jquery.sticky.js"></script>
+
+  <script>
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:0});
+  });
+  </script>
+
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
 
 </head>
 
 <body>
   
-  <div class="navbar-fixed">
-   <nav>
-     <div class="nav-wrapper">
-       <a href="#!" class="brand-logo">Logo</a>
-       <ul class="right hide-on-med-and-down">
-         <li><a href="sass.html">Sass</a></li>
-         <li><a href="badges.html">Components</a></li>
-       </ul>
-     </div>
-   </nav>
- </div>
-
     <div id="splash" class="full-screen">
 </div>
 
 
+<div id="sticker">
+  <div class="navbar">
+   <nav>
+     <div class="nav-wrapper">
+       <a href="#!" class="left">
+        <img src="/assets/img/logo.svg"></img>
+      </a>
+       <ul class="right hide-on-med-and-down">
+         <li><a href="#one">Why Fractal</a></li>
+         <li><a href="#two">Our Services</a></li>
+       </ul>
+     </div>
+   </nav>
+ </div>
+ </div>
+
+
+<div id="one" style="padding-top:30px;">
 <!-- <div id="open" class="full-screen"> -->
 <div id="open">
   <div class="splash-align">
@@ -42,61 +76,138 @@
   </div>
 </div>
 
+</div>
 
-<div id="services" class="full-screen">
+<div id="two" style="padding-top:30px;">
+<!-- <div id="services" class="full-screen"> -->
+<div id="services">
+
   <div class="splash-align">
     <h1>OUR SERVICES</h1>
   </div>
+
   <div class="container">
-    <div class="row" style="text-align:center;">
+
+    <div class="row">
       <div class="col s4">
-        Engineering
+        <div class="card grey">
+          <div class="card-content white-text">
+            <span class="card-title">Design</span>
+            <p>I am a very simple card. I am good at containing small bits of information.
+              I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+              <a href="#" class="white-link">This is a link</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s4">
+          <div class="card grey">
+            <div class="card-content white-text">
+              <span class="card-title">Engineering</span>
+              <p>I am a very simple card. I am good at containing small bits of information.
+                I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="card-action">
+                <a href="#" class="white-link">This is a link</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col s4">
+            <div class="card grey">
+              <div class="card-content white-text">
+                <span class="card-title">3D Stuff</span>
+                <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action background-link">
+                  <a href="#" class="white-link">This is a link</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-      <div class="col s4">
-        Design
-      </div>
-      <div class="col s4">
-        3D Everything
-      </div>
-    </div>
-  </div>
+
 </div>
 
-
+  <footer id="footer">
   <div class="container">
-  <!-- <div class="valign-wrapper">
+    <!-- <div class="valign-wrapper">
     <div class="valign"> -->
-      <div class="row" style="text-align:center;">
+    <div class="row" style="text-align:center;">
 
-        <div class="col s3">
-          <h6>Contact</h6>
-          <ul style="text-align:left;margin-left:35%;">
-            <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i> Email</a><li>
-            <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i> Phone</a><li>
-            <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a><li>
-            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a><li>
-            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a><li>
-            <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a><li>
-            <li><a href=""><i class="fa fa-github-alt" aria-hidden="true"></i> Github</a><li>
-          </ul>
-        </div>
 
-        <div class="col s3">
-          About
-        </div>
-
-        <div class="col s3">
-          Legal
-        </div>
-
-        <div class="col s3">
-          Stuff
-        </div>
-
+      <div class="col s4">
+        <h5>Who We Help</h5>
+        <div style="width:100%;border-top: .25px solid white;"></div>
+        <ul style="text-align:left;">
+          <li><a href=""></i><i class="fa fa-building fa-fw" aria-hidden="true"></i> Companies</a></li>
+          <li><a href=""></i><i class="fa fa-line-chart fa-fw" aria-hidden="true"></i> Startups</a></li>
+          <li><a href=""></i><i class="fa fa-lightbulb-o fa-fw" aria-hidden="true"></i> Inventors/Innovators</a></li>
+          <li><a href=""></i><i class="fa fa-briefcase fa-fw" aria-hidden="true"></i> Entrepreneurs</a></li>
+        </ul>
       </div>
-    <!-- </div>
-  </div> -->
+
+
+      <div class="col s4">
+        <h5>Contact</h5>
+        <div style="width:100%;border-top: .25px solid white;"></div>
+        <ul style="text-align:left;">
+          <li><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Call
+            <ol>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Evan</a></li>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Dave</a></li>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Mitch</a></li>
+            </ol>
+          </li>
+          <li><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> Email
+            <ol>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Evan</a></li>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Dave</a></li>
+              <li><a href="#!"><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Mitch</a></li>
+            </ol>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col s4">
+        <h5>Social</h5>
+        <div style="width:100%;border-top: .25px solid white;"></div>
+        <ul style="text-align:left;">
+          <li><a href="https://www.instagram.com/fractalhardware/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i> Instagram</a></li>
+          <li><a href="https://www.facebook.com/fractalhardware/"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i> Facebook</a></li>
+          <li><a href="https://twitter.com/FractalHardware"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> Twitter</a></li>
+          <li><a href="https://www.linkedin.com/company/fractal-hardware"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://github.com/FractalHardware"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> Github</a></li>
+        </ul>
+      </div>
+      <!--
+      <div class="col s3">
+      <h5>About Us</h5>
+      <div style="width:100%;border-top: .25px solid white;"></div>
+      <ul style="text-align:left;">
+      <li><a href=""></i> Leadership</a></li>
+    </ul>
+  </div>
+
+  <div class="col s3">
+  <h5>About Us</h5>
+  <div style="width:100%;border-top: .25px solid white;"></div>
+  <ul style="text-align:left;">
+  <li><a href=""></i> Leadership</a></li>
+</ul>
+</div> -->
+
+
 </div>
+<!-- </div>
+</div> -->
+</div>
+</footer>
 
 </body>
 </html>
