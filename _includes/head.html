@@ -11,12 +11,25 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="/assets/js/jquery.sticky.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <script src="/assets/js/cards.js"></script>
+  <script src="/assets/js/collapsible.js"></script>
+  <script src="/assets/js/global.js"></script>
+
   <script>
   $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0});
   });
   </script>
 
+  <script>
+  $(document).ready(function(){
+   $('.collapsible').collapsible({
+     accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+   });
+ });
+ </script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
@@ -35,6 +48,5 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
 
 </head>

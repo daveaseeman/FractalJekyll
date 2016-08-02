@@ -13,12 +13,25 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <script src="/assets/js/jquery.sticky.js"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+  <script src="/assets/js/cards.js"></script>
+  <script src="/assets/js/collapsible.js"></script>
+  <script src="/assets/js/global.js"></script>
+
   <script>
   $(document).ready(function(){
     $("#sticker").sticky({topSpacing:0});
   });
   </script>
 
+  <script>
+  $(document).ready(function(){
+   $('.collapsible').collapsible({
+     accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+   });
+ });
+ </script>
 
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
@@ -37,7 +50,6 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-
 
 </head>
 
@@ -90,94 +102,94 @@
 
     <div class="row">
       <div class="col s4">
-        <div class="card grey activator">
-          <div class="card-content white-text">
-            <span class="card-title">Industrial Design</span>
-              <p>A symphony can only be as good as the sheet music. A product can only be as good as the design. We work hard to nail the design intent up front because so many future decisions hang on the solutions we outline here. To get there quickly we will do hand-sketching, fast mock-ups, and strategic research, before spending the time to build out a detailed CAD model or nice-looking prototype.</p>
-            </ul>
-            </div>
-          </div>
-        </div>
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Industrial<br>Design</h5></div>
+            <div class="collapsible-body"><p>A symphony can only be as good as the sheet music. A product can only be as good as the design. We work hard to nail the design intent up front because so many future decisions hang on the solutions we outline here. To get there quickly we will do hand-sketching, fast mock-ups, and strategic research, before spending the time to build out a detailed CAD model or nice-looking prototype.</p></div>
+          </li>
+        </ul>
+      </div>
 
-        <div class="col s4">
-          <div class="card grey">
-            <div class="card-content white-text">
-              <span class="card-title">3D CAD</span>
-              <p>3D modeling is one of the most powerful design and communication tools in the world. We create detailed files that are ready to 3D print or take to a manufacturer. We also use these files to create supporting imagery and 2D drawings. CAD is an indispensable part of today’s hardware development process.</p>
-              </div>
-            </div>
-          </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">3D<br>CAD</h5></div>
+            <div class="collapsible-body"><p>3D modeling is one of the most powerful design and communication tools in the world. We create detailed files that are ready to 3D print or take to a manufacturer. We also use these files to create supporting imagery and 2D drawings. CAD is an indispensable part of today’s hardware development process.</p></div>
+          </li>
+        </ul>
+      </div>
 
-          <div class="col s4">
-            <div class="card grey">
-              <div class="card-content white-text">
-                <span class="card-title">Mechanical Enginering</span>
-                <p>There are always a surprising amount of details to figure out with any physical product. We leverage our manufacturing knowledge to design parts that can be made affordably, assembled quickly, and function beautifully.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Mechanical<br>Engineering</h5></div>
+            <div class="collapsible-body"><p>There are always a surprising amount of details to figure out with any physical product. We leverage our manufacturing knowledge to design parts that can be made affordably, assembled quickly, and function beautifully.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-          <div class="row">
-            <div class="col s4">
-              <div class="card grey">
-                <div class="card-content white-text">
-                  <span class="card-title">Electrical Engineering</span>
-                  <p>These days, the IoT (internet of things) trend is exploding. We want to be there to help. We start with your ‘wish list’ and create a schematic design where functionality is priority 1 and cost is a close second. Then we move on to PCB design and order a physical circuit board. This is a recursive process where we complete testing and make small revisions until the device is functioning perfectly and is ready to be mass produced.</p>
-                  </div>
-                </div>
-              </div>
+    <div class="row">
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Electical<br>Engineering</h5></div>
+            <div class="collapsible-body"><p>These days, the IoT (internet of things) trend is exploding. We want to be there to help. We start with your ‘wish list’ and create a schematic design where functionality is priority 1 and cost is a close second. Then we move on to PCB design and order a physical circuit board. This is a recursive process where we complete testing and make small revisions until the device is functioning perfectly and is ready to be mass produced.</p></div>
+          </li>
+        </ul>
+      </div>
 
-              <div class="col s4">
-                <div class="card grey">
-                  <div class="card-content white-text">
-                    <span class="card-title">Firmware</span>
-                    <p>We design our electronics with firmware in mind. Fractal has embedded systems firmware capabilities to program your electronics to do exactly what you want. Whether that's measuring movement via an accelerometer or communicating with an iOS/Android app via bluetooth, we can make it happen.</p>
-                    </div>
-                  </div>
-                </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Firmware<br>Design</h5></div>
+            <div class="collapsible-body"><p>We design our electronics with firmware in mind. Fractal has embedded systems firmware capabilities to program your electronics to do exactly what you want. Whether that's measuring movement from an accelerometer or communicating with an iOS/Android app via bluetooth, we can make it happen.</p></div>
+          </li>
+        </ul>
+      </div>
 
-                <div class="col s4">
-                  <div class="card grey">
-                    <div class="card-content white-text">
-                      <span class="card-title">Prototyping</span>
-                      <p>Once the design has been fully fleshed out in our iterative process it may be appropriate to spend the time and money to get a show quality prototype made. This is the prototype that most people think of first when they think “prototype”, but in our process it’s the last step before mass production.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Prototyping<br>Products</h5></div>
+            <div class="collapsible-body"><p>Once the design has been fully fleshed out in our iterative process it may be appropriate to spend the time and money to get a show quality prototype made. This is the prototype that most people think of first when they think “prototype”, but in our process it’s the last step before mass production.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-                <div class="row">
-                  <div class="col s4">
-                    <div class="card grey">
-                      <div class="card-content white-text">
-                        <span class="card-title">Design for Manufacturing and Assembly</span>
-                        <p>Making a prototype is one thing. Making ten thousand units is something else completely. We can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimise part cost and maximize profit margin.</p>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="col s4">
-                      <div class="card grey">
-                        <div class="card-content white-text">
-                          <span class="card-title">Custom Testing</span>
-                          <p>Although we don’t actually manufacture goods in house, we can help your company's manufacturing system. Fractal can help build electrical and mechanical test jigs to speed up your QC processes. Jigs such as inrush current testing or a microcontroller programming setup on the electrical side and force or stress testing on the mechanical. We are capable of making a device to help you manufacture products smoother and quicker than ever before.</p>
-                          </div>
-                        </div>
-                      </div>
+    <div class="row">
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Design for<br>Manufacturing</h5></div>
+            <div class="collapsible-body"><p>Making a prototype is one thing. Making ten thousand units is something else completely. Through Design for Manufacturing and Assembly, we can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimise part cost and maximize profit margin</p></div>
+          </li>
+        </ul>
+      </div>
 
-                      <div class="col s4">
-                        <div class="card grey">
-                          <div class="card-content white-text">
-                            <span class="card-title">Manufacturing Network</span>
-                            <p>We will connect you with our trusted partners and walk with you through the process of mass manufacture. We don’t get any kind of commission or percentage from these connections, and instead bill for our services in a straightforward way, which keeps our interest aligned with yours to get you to your goal by the most direct route possible.</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Custom<br>Testing</h5></div>
+            <div class="collapsible-body"><p>Although we don’t actually manufacture goods in house, we can help your company's manufacturing system. Fractal can help build electrical and mechanical test jigs to speed up your QC processes. Jigs such as inrush current testing or a microcontroller programming setup on the electrical side and force or stress testing on the mechanical. We are capable of making a device to help you manufacture products smoother and quicker than ever before.</p></div>
+          </li>
+        </ul>
+      </div>
 
-                    </div>
-                  </div>
+      <div class="col s4">
+        <ul class="collapsible" data-collapsible="accordion">
+          <li>
+            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Manufacturing<br>Network</h5></div>
+            <div class="collapsible-body"><p>We will connect you with our trusted partners and walk with you through the process of mass manufacture. We don’t get any kind of commission or percentage from these connections, and instead bill for our services in a straightforward way, which keeps our interest aligned with yours to get you to your goal by the most direct route possible.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 </div>
 
