@@ -1,0 +1,22 @@
+# Prose Settings
+prose:
+  siteurl: 'http://fractalhardware.com'
+  media: '/assets/img'
+  ignore:
+    - '.gitignore'
+    - '*.html'
+    - '*.xml'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'CNAME'
+    - '404.md'
+    - 'README.md'
+    - '_config.yml'
+    - '/_layouts'
+    - '/_includes/*.html'
+    - '/_sass'
+    - '/_site'
+    - '/assets/css'
+    - '/assets/js'
+    - '.sass-cache'
+    - '.DS_Store'
