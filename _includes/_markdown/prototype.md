@@ -1,0 +1,1 @@
+Once the design has been fully fleshed out in our iterative process it may be appropriate to spend the time and money to get a show quality prototype made. This is the prototype that most people think of first when they think “prototype”, but in our process it’s the last step before mass production.

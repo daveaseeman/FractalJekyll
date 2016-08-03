@@ -1,10 +1,13 @@
 title: Fractal Hardware
-email: dave@fractalhardware.com
+email: team@fractalhardware.com
 description: > # this means to ignore newlines until "baseurl:"
   Fractal Hardware Design
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://fractalhardware.com" # the base hostname & protocol for your site
 analytics: UA-81873109-1
 
 # Build settings
 markdown: kramdown
+permalink: /posts/:title/
+gems:
+  - jemoji
+  - jekyll-sitemap

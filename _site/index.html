@@ -51,6 +51,15 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-81873109-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+
 </head>
 
 <body>
@@ -63,7 +72,7 @@
   <div class="navbar">
    <nav>
      <div class="nav-wrapper">
-       <a href="#!" style="text-align: left;">
+       <a href="#splash" style="text-align: left;">
         <img src="/assets/img/logo.svg" style="position:absolute;height:100%;"></img>
       </a>
        <ul class="right hide-on-med-and-down">
@@ -74,6 +83,23 @@
    </nav>
  </div>
  </div>
+
+<script>
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
 
 
 <div id="one" style="padding-top:30px;">
@@ -105,66 +131,82 @@
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Industrial<br>Design</h5></div>
-            <div class="collapsible-body"><p>A symphony can only be as good as the sheet music. A product can only be as good as the design. We work hard to nail the design intent up front because so many future decisions hang on the solutions we outline here. To get there quickly we will do hand-sketching, fast mock-ups, and strategic research, before spending the time to build out a detailed CAD model or nice-looking prototype.</p></div>
+            <div class="collapsible-body"><p>A symphony can only be as good as the sheet music. A product can only be as good as the design. We work hard to nail the design intent up front because so many future decisions hang on the solutions we outline here. To get there quickly we will do hand-sketching, fast mock-ups, and strategic research, before spending the time to build out a detailed CAD model or nice-looking prototype.</p>
+
+</div>
           </li>
         </ul>
       </div>
 
-      <div class="col s12 m4">
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">3D<br>CAD</h5></div>
-            <div class="collapsible-body"><p>3D modeling is one of the most powerful design and communication tools in the world. We create detailed files that are ready to 3D print or take to a manufacturer. We also use these files to create supporting imagery and 2D drawings. CAD is an indispensable part of today’s hardware development process.</p></div>
-          </li>
-        </ul>
-      </div>
+        <div class="col s12 m4">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Electical<br>Engineering</h5></div>
+              <div class="collapsible-body"><p>These days, the IoT (internet of things) trend is exploding. We want to be there to help. We start with your ‘wish list’ and create a schematic design where functionality is priority 1 and cost is a close second. Then we move on to PCB design and order a physical circuit board. This is a recursive process where we complete testing and make small revisions until the device is functioning perfectly and is ready to be mass produced.</p>
 
-      <div class="col s12 m4">
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Mechanical<br>Engineering</h5></div>
-            <div class="collapsible-body"><p>There are always a surprising amount of details to figure out with any physical product. We leverage our manufacturing knowledge to design parts that can be made affordably, assembled quickly, and function beautifully.</p></div>
-          </li>
-        </ul>
-      </div>
-    </div>
+</div>
+            </li>
+          </ul>
+        </div>
 
-    <div class="row">
-      <div class="col s12 m4">
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Electical<br>Engineering</h5></div>
-            <div class="collapsible-body"><p>These days, the IoT (internet of things) trend is exploding. We want to be there to help. We start with your ‘wish list’ and create a schematic design where functionality is priority 1 and cost is a close second. Then we move on to PCB design and order a physical circuit board. This is a recursive process where we complete testing and make small revisions until the device is functioning perfectly and is ready to be mass produced.</p></div>
-          </li>
-        </ul>
-      </div>
+        <div class="col s12 m4">
+          <ul class="collapsible" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Mechanical<br>Engineering</h5></div>
+              <div class="collapsible-body"><p>There are always a surprising amount of details to figure out with any physical product. We leverage our manufacturing knowledge to design parts that can be made affordably, assembled quickly, and function beautifully.</p>
 
-      <div class="col s12 m4">
-        <ul class="collapsible" data-collapsible="accordion">
-          <li>
-            <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Firmware<br>Design</h5></div>
-            <div class="collapsible-body"><p>We design our electronics with firmware in mind. Fractal has embedded systems firmware capabilities to program your electronics to do exactly what you want. Whether that's measuring movement from an accelerometer or communicating with an iOS/Android app via bluetooth, we can make it happen.</p></div>
-          </li>
-        </ul>
-      </div>
+</div>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="row">
 
       <div class="col s12 m4">
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Prototyping<br>Products</h5></div>
-            <div class="collapsible-body"><p>Once the design has been fully fleshed out in our iterative process it may be appropriate to spend the time and money to get a show quality prototype made. This is the prototype that most people think of first when they think “prototype”, but in our process it’s the last step before mass production.</p></div>
+            <div class="collapsible-body"><p>Once the design has been fully fleshed out in our iterative process it may be appropriate to spend the time and money to get a show quality prototype made. This is the prototype that most people think of first when they think “prototype”, but in our process it’s the last step before mass production.</p>
+
+</div>
           </li>
         </ul>
       </div>
+
+    <div class="col s12 m4">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">3D<br>CAD</h5></div>
+          <div class="collapsible-body"><p>3D modeling is one of the most powerful design and communication tools in the world. We create detailed files that are ready to 3D print or take to a manufacturer. We also use these files to create supporting imagery and 2D drawings. CAD is an indispensable part of today’s hardware development process.</p>
+
+</div>
+        </li>
+      </ul>
     </div>
 
 
-    <div class="row">
+    <div class="col s12 m4">
+      <ul class="collapsible" data-collapsible="accordion">
+        <li>
+          <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Firmware<br>Design</h5></div>
+          <div class="collapsible-body"><p>We design our electronics with firmware in mind. Fractal has embedded systems firmware capabilities to program your electronics to do exactly what you want. Whether that’s measuring movement from an accelerometer or communicating with an iOS/Android app via bluetooth, we can make it happen.</p>
+
+</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
       <div class="col s12 m4">
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Design for<br>Manufacturing</h5></div>
-            <div class="collapsible-body"><p>Making a prototype is one thing. Making ten thousand units is something else completely. Through Design for Manufacturing and Assembly, we can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimise part cost and maximize profit margin</p></div>
+            <div class="collapsible-body"><p>Making a prototype is one thing. Making ten thousand units is something else completely. Through Design for Manufacturing and Assembly, we can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimize part cost and maximize profit margin.</p>
+
+</div>
           </li>
         </ul>
       </div>
@@ -173,7 +215,9 @@
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Custom<br>Testing</h5></div>
-            <div class="collapsible-body"><p>Although we don’t actually manufacture goods in house, we can help your company's manufacturing system. Fractal can help build electrical and mechanical test jigs to speed up your QC processes. Jigs such as inrush current testing or a microcontroller programming setup on the electrical side and force or stress testing on the mechanical. We are capable of making a device to help you manufacture products smoother and quicker than ever before.</p></div>
+            <div class="collapsible-body"><p>Although we don’t actually manufacture goods in house, we can help your company’s manufacturing system. Fractal can help build electrical and mechanical test jigs to speed up your QC processes. Jigs such as inrush current testing or a microcontroller programming setup on the electrical side and force or stress testing on the mechanical. We are capable of making a device to help you manufacture products smoother and quicker than ever before.</p>
+
+</div>
           </li>
         </ul>
       </div>
@@ -182,7 +226,9 @@
         <ul class="collapsible" data-collapsible="accordion">
           <li>
             <div class="collapsible-header grey white-text center"><h5 style="margin-top:0;padding-top:10px;">Manufacturing<br>Network</h5></div>
-            <div class="collapsible-body"><p>We will connect you with our trusted partners and walk with you through the process of mass manufacture. We don’t get any kind of commission or percentage from these connections, and instead bill for our services in a straightforward way, which keeps our interest aligned with yours to get you to your goal by the most direct route possible.</p></div>
+            <div class="collapsible-body"><p>We will connect you with our trusted partners and walk with you through the process of mass manufacture. We don’t get any kind of commission or percentage from these connections, and instead bill for our services in a straightforward way, which keeps our interest aligned with yours to get you to your goal by the most direct route possible.</p>
+
+</div>
           </li>
         </ul>
       </div>
@@ -199,17 +245,18 @@
     <div class="valign"> -->
     <div class="row" style="text-align:center;">
 
-      <div class="col s4">
+      <div class="col s12 m4">
         <h5>Who We Help</h5>
         <div style="width:100%;border-top: .25px solid white;"></div>
         <ul style="text-align:left;">
-          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Company - and Im interested in your services'><i class='fa fa-building fa-fw' aria-hidden='true'></i> Company</a></li>
-          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Startup - and Im interested in your services'><i class='fa fa-line-chart fa-fw' aria-hidden='true'></i> Startup</a></li>
-          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Inventor/Innovator - and Im interested in your services'><i class='fa fa-lightbulb-o fa-fw' aria-hidden='true'></i> Inventor/Innovator</a></li>
-          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Entrepreneur - and Im interested in your services'><i class='fa fa-briefcase fa-fw' aria-hidden='true'></i> Entrepreneur</a></li>        </ul>
+          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Company - and Im interested in your services'><i class='fa fa-building fa-fw' aria-hidden='true'></i> Companies</a></li>
+          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Startup - and Im interested in your services'><i class='fa fa-line-chart fa-fw' aria-hidden='true'></i> Startups</a></li>
+          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Inventor/Innovator - and Im interested in your services'><i class='fa fa-lightbulb-o fa-fw' aria-hidden='true'></i> Inventors/Innovators</a></li>
+          <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Entrepreneur - and Im interested in your services'><i class='fa fa-briefcase fa-fw' aria-hidden='true'></i> Entrepreneurs</a></li>
+        </ul>
       </div>
 
-      <div class="col s4">
+      <div class="col s12 m4">
         <h5>Contact</h5>
         <div style="width:100%;border-top: .25px solid white;"></div>
         <ul style="text-align:left;">
@@ -230,7 +277,7 @@
         </ul>
       </div>
 
-      <div class="col s4">
+      <div class="col s12 m4">
         <h5>Social</h5>
         <div style="width:100%;border-top: .25px solid white;"></div>
         <ul style="text-align:left;">
@@ -239,6 +286,7 @@
           <li><a href="https://twitter.com/FractalHardware"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> Twitter</a></li>
           <li><a href="https://www.linkedin.com/company/fractal-hardware"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></li>
           <li><a href="https://github.com/FractalHardware"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> Github</a></li>
+          <li><a href="https://medium.com/fractalhardware"><i class="fa fa-medium fa-fw" aria-hidden="true"></i> Medium</a></li>
         </ul>
       </div>
 

@@ -1,0 +1,1 @@
+We design our electronics with firmware in mind. Fractal has embedded systems firmware capabilities to program your electronics to do exactly what you want. Whether that's measuring movement from an accelerometer or communicating with an iOS/Android app via bluetooth, we can make it happen.
