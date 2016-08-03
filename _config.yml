@@ -1,8 +1,9 @@
 title: Fractal Hardware
+company: Fractal, LLC
+address: 533 Church St. Suite 133 Nashville, TN 37219
 email: team@fractalhardware.com
-description: > # this means to ignore newlines until "baseurl:"
-  Fractal Hardware Design
-url: "http://fractalhardware.com" # the base hostname & protocol for your site
+description: Fractal Hardwarean is an elite and nimble hardware design team
+url: "http://fractalhardware.com"
 analytics: UA-81873109-1
 
 # Build settings
