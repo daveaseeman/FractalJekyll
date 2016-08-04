@@ -1,19 +1,22 @@
 .collapsible {
-  border-top: 1px solid $collapsible-border-color;
-  border-right: 1px solid $collapsible-border-color;
-  border-left: 1px solid $collapsible-border-color;
+  border: 1px solid $collapsible-border-color;
+  border-radius: $button-radius;
   margin: $element-top-margin 0 $element-bottom-margin 0;
-  @extend .z-depth-1;
+  @extend .z-depth-0;
 }
 
 .collapsible-header {
+  font-size: $h5-fontsize;
+  font-family: $head-font;
+  font-weight: 400;
   display: block;
   cursor: pointer;
   min-height: $collapsible-height;
-  line-height: $collapsible-height;
-  padding: 0 1rem;
+  line-height: $collapsible-height*.75;
+  padding: 0.5rem 0.5rem;
   background-color: $collapsible-header-color;
-  border-bottom: 1px solid $collapsible-border-color;
+
+  border-radius: $button-radius;
 
   i {
     width: 2rem;
@@ -28,7 +31,7 @@
 
 .collapsible-body {
   display: none;
-  border-bottom: 1px solid $collapsible-border-color;
+  // border-bottom: 1px solid $collapsible-border-color;
   box-sizing: border-box;
 
   p {
@@ -54,6 +57,12 @@
     line-height: inherit;
     height: inherit;
     padding: 0 $sidenav-padding;
+    br {
+      display: block;
+      margin: 5px 0;
+      padding: 0;
+      line-height: 50%;
+    }
 
     &:hover { background-color: rgba(0,0,0,.05); }
     i { line-height: inherit; }

@@ -57,7 +57,7 @@
   background-color: $button-raised-background;
   text-align: center;
   letter-spacing: .5px;
-  @extend .z-depth-1;
+  @extend .z-depth-0;
   transition: .2s ease-out;
   cursor: pointer;
 
@@ -80,7 +80,7 @@
   padding: 0;
   background-color: $button-floating-background;
   border-radius: $button-floating-radius;
-  @extend .z-depth-1;
+  @extend .z-depth-0;
   transition: .3s;
   cursor: pointer;
   vertical-align: middle;
