@@ -1,1 +1,1 @@
-Making a prototype is one thing. Making ten thousand units is something else completely. Through Design for Manufacturing and Assembly, we can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimize part cost and maximize profit margin.
+Making a prototype is one thing. Making ten thousand units is something else completely. We can refine your product to take advantage of high-volume production technologies, and global supply chains, which helps to minimize part cost and maximize profit margin.
