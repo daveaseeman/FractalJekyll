@@ -54,6 +54,11 @@ html>body .full-screen {
   z-index: 9999;
 }
 
+.negative-stack {
+  position:relative;
+  z-index:-1;
+}
+
 .inline-list {
     margin: 0;
     padding: 0;
