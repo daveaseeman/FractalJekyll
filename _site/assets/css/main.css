@@ -4640,6 +4640,7 @@ html > body .full-screen {
   height: auto; }
 
 #splash {
+  text-align: center;
   position: relative;
   background: url(/assets/img/splash.svg) center center no-repeat #F0533C;
   background-size: 75% 75%, contain; }
@@ -4648,6 +4649,7 @@ html > body .full-screen {
   margin: 0% 12.5% 0% 12.5%; }
 
 #splash-button {
+  padding-right: 5rem;
   height: 10%;
   width: 100%;
   position: absolute;
