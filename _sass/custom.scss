@@ -46,8 +46,22 @@ html>body .full-screen {
   }
 }
 
+#tristar {
+  height: 18px;
+  display: inline;
+  vertical-align: top;
+  content: url(/assets/img/tristar.svg);
+}
+
 .white-link {
   @extend .white-text;
+}
+
+.eyebrow {
+  width:100%;
+  border-top: .25px solid white;
+  color: $background-color;
+  height: inherit;
 }
 
 #sticker {
