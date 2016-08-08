@@ -4702,11 +4702,8 @@ html > body .full-screen {
   height: inherit; }
 
 #sticker {
-  z-index: 9999; }
-
-.negative-stack {
   position: relative;
-  z-index: -1; }
+  z-index: 99; }
 
 .inline-list {
   margin: 0;

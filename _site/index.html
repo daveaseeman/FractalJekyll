@@ -33,6 +33,12 @@
  });
  </script>
 
+ <script>
+ $(document).ready(function() {
+    Materialize.updateTextFields();
+  });
+  </script>
+
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
@@ -63,7 +69,6 @@
 </head>
 
 <body>
-  
     <div id="splash" class="full-screen">
   <div id="splash-button">
     <a href="#one" class="bounce" style="position:absolute;"><i class="fa fa-angle-down fa-3x white-text" aria-hidden="true"></i></a>
@@ -253,21 +258,20 @@ $(function() {
   </div>
 
   <div class="container">
-
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
       <form action="//fractalhardware.us1.list-manage.com/subscribe/post?u=8953c3719c271d3388c6276d1&amp;id=4171e26846" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
         <div id="mc_embed_signup_scroll">
-
           <div class="row">
             <div class="col s12 m6">
-              <div class="input-field negative-stack">
+              <div> <!-- input-field -->
+                <p>test7</p>
                 <label for="mce-FNAME">First Name </label>
                 <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
               </div>
             </div>
             <div class="col s12 m6">
-              <div class="input-field negative-stack">
+              <div> <!-- input-field -->
                 <label for="mce-LNAME">Last Name </label>
                 <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
               </div>
@@ -276,13 +280,13 @@ $(function() {
 
           <div class="row">
             <div class="col s12 m6">
-              <div class="input-field negative-stack">
+              <div> <!-- input-field -->
                 <label for="mce-EMAIL">Email Address </label>
                 <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
               </div>
             </div>
             <div class="col s12 m6">
-              <div class="input-field negative-stack size1of2">
+              <div class="input-field size1of2">
                 <label for="mce-PHONE">Phone Number </label>
                 <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
               </div>
@@ -291,7 +295,7 @@ $(function() {
 
           <div class="row">
             <div class="col s12 m12">
-              <div class="input-field negative-stack">
+              <div> <!-- input-field -->
                 <label for="mce-MESSAGE">Message </label>
                 <input type="text" value="" name="MESSAGE" class="required" id="mce-MESSAGE">
               </div>
