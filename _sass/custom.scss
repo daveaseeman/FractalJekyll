@@ -55,6 +55,7 @@ html>body .full-screen {
 
 #open {
   background: $background-color;
+  @extend .negative-stack;
   // border-bottom:.25px solid #DCDCDC;
   // border-top:.25px solid #DCDCDC;
 }
@@ -64,6 +65,10 @@ html>body .full-screen {
   // color: $background-color;
   // border-bottom:.25px solid #DCDCDC;
   // border-top:.25px solid #DCDCDC;
+}
+
+#contact {
+  @extend .negative-stack;
 }
 
 #footer {
@@ -77,14 +82,23 @@ html>body .full-screen {
 }
 
 #tristar {
-  height: 18px;
+  height: 3rem;
   display: inline;
   vertical-align: top;
   content: url(/assets/img/tristar.svg);
+  margin-bottom: 25px;
 }
 
 .white-link {
   @extend .white-text;
+}
+
+.fa-circle {
+  color: $brand-color;
+}
+
+.fa, .fa-stack {
+  position:relative;
 }
 
 .eyebrow {
@@ -96,13 +110,17 @@ html>body .full-screen {
 
 #sticker {
   position:relative;
-  z-index:99;
+  z-index:50000;
 }
 
-// .negative-stack {
-//   position:relative;
-//   z-index:-1;
-// }
+.negative-stack {
+   position:relative;
+   z-index:-1;
+}
+
+.link-padder {
+  padding-top:30px;
+}
 
 .inline-list {
     margin: 0;

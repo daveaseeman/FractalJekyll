@@ -135,13 +135,13 @@ textarea.materialize-textarea {
     }
   }
 
-  // position: relative;
-  // margin-top: 1rem;
+  position: relative;
+  margin-top: 1rem;
 
   label {
     color: $input-border-color;
-    // position: absolute; // makes text appear inside the field
-    // top: 0.8rem; // makes text appear inside the field
+    position: absolute; // makes text appear inside the field
+    top: 0.8rem; // makes text appear inside the field
     font-size: 1rem;
     cursor: text;
     transition: .2s ease-out;
