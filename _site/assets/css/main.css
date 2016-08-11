@@ -4643,7 +4643,8 @@ html > body .full-screen {
   text-align: center;
   position: relative;
   background: url(/assets/img/splash.svg) center center no-repeat #F0533C;
-  background-size: 75% 75%, contain; }
+  background-size: 75% 75%, contain;
+  background-color: #F0533C; }
 
 .splash-align {
   margin: 0% 12.5% 0% 12.5%; }

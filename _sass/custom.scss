@@ -18,6 +18,7 @@ html>body .full-screen {
   position: relative;
   background: url(/assets/img/splash.svg) center center no-repeat $brand-color;
   background-size: $splash-width $splash-width, contain;
+  background-color: $brand-color;
 }
 
 .splash-align {
