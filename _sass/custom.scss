@@ -94,6 +94,7 @@ html>body .full-screen {
   background: $brand-color;
   padding-bottom: 5px;
   color: $background-color;
+  @extend .negative-stack;
   a {
     @extend .white-text;
   }
