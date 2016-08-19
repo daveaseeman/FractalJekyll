@@ -4752,7 +4752,7 @@ hr {
   position: relative;
   z-index: 50000; }
 
-.negative-stack, #open, #contact {
+.negative-stack, #open, #contact, #footer {
   position: relative;
   z-index: -1; }
 
