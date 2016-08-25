@@ -90,7 +90,7 @@ html>body .full-screen {
 }
 
 #footer {
-  padding-top: 50px;
+  padding-top: 1rem;
   background: $brand-color;
   padding-bottom: 5px;
   color: $background-color;
@@ -101,11 +101,11 @@ html>body .full-screen {
 }
 
 #tristar {
-  height: 3rem;
+  height: 2rem;
   display: inline;
   vertical-align: top;
+  margin-bottom:1rem;
   content: url(/assets/img/tristar.svg);
-  margin-bottom: 25px;
 }
 
 .white-link {
@@ -118,6 +118,18 @@ html>body .full-screen {
 
 .fa, .fa-stack {
   position:relative;
+}
+
+.list-left {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+
+.list-right {
+  width: 50%;
+  float: right;
+  text-align: left;
 }
 
 .eyebrow {
@@ -169,6 +181,12 @@ hr {
 
 .link-padder {
   padding-top:30px;
+}
+
+.li-padder {
+  li {
+    padding: .2rem 0 .2rem 0;
+  }
 }
 
 .inline-list {
