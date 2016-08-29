@@ -217,6 +217,21 @@ html>body .full-screen {
   background-color: black;
 }
 
+.table {
+  display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+  @media #{$large-and-up} {
+    display:inline;
+    float:right;
+  }
+}
+
+.nav-font {
+  font-family: $head-font;
+  font-weight: $head-font-light;
+  letter-spacing: .1rem;
+}
+
 .zero-bottom-margin {
    margin-bottom:0;
 }

@@ -2,7 +2,7 @@
 layout: null
 ---
 @charset "utf-8";
-@import "https://fonts.googleapis.com/css?family=Roboto:500|Source+Code+Pro:200";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,500|Source+Code+Pro:300";
 
 // Variables //
 $brand-color: #F0533C;
@@ -12,8 +12,9 @@ $link-color: #4078c0;
 
 $head-font: "Roboto";
 $head-font-weight: 500;
+$head-font-light: 300;
 $body-font: "Source Code Pro";
-$body-font-weight: 200;
+$body-font-weight: 300;
 
 $splash-width: 75%;
 $splash-align: (100-$splash-width)/2;

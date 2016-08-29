@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Roboto:500|Source+Code+Pro:200";
+@import "https://fonts.googleapis.com/css?family=Roboto:300,500|Source+Code+Pro:300";
 .materialize-red {
   background-color: #e51c23 !important; }
 
@@ -3142,7 +3142,7 @@ a {
 html {
   line-height: 1.5;
   font-family: "Source Code Pro";
-  font-weight: 200;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
     html {
@@ -4800,6 +4800,20 @@ html > body .full-screen {
 
 .nav-color {
   background-color: black; }
+
+.table {
+  display: table;
+  /* Allow the centering to work */
+  margin: 0 auto; }
+  @media only screen and (min-width: 993px) {
+    .table {
+      display: inline;
+      float: right; } }
+
+.nav-font {
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: .1rem; }
 
 .zero-bottom-margin {
   margin-bottom: 0; }
