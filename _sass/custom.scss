@@ -187,16 +187,25 @@ html>body .full-screen {
   }
 }
 
-hr {
+.div-section {
+  $hr-height: $navbar-height-mobile;
+  @media #{$medium-and-up} {
+    $hr-height: $navbar-height;
+  }
   width: 70%;
-  padding:2rem 0 2rem 0;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    border-radius: 1px;
-    margin: 0 auto;
-    padding: 0;
+  display: block;
+  border-top: 1px solid #ccc;
+  border-radius: 0.5px;
+  margin:$hr-height/2 auto $hr-height/2 auto;
+}
+
+.half-div-section {
+  $hr-height: $navbar-height-mobile/4;
+  @media #{$medium-and-up} {
+    $hr-height: $navbar-height/4;
+  }
+  border: none;
+  margin:$hr-height/2 auto $hr-height/2 auto;
 }
 
 .negative-stack {
@@ -208,14 +217,8 @@ hr {
   background-color: black;
 }
 
-.link-padder {
-  padding-top:35px;
-}
-
-.padder {
-    // border:2px solid black;
-    padding-top:0;padding-bottom:0;
-    margin: .2rem 0 .2rem 0;
+.zero-bottom-margin {
+   margin-bottom:0;
 }
 
 .inline-list {

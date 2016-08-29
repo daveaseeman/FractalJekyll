@@ -4,10 +4,18 @@ layout: default
 
 {% include splash.html %}
 
+<a name="one"></a>
 {% include navbar.html %}
 
-{% include open.html %}
+<div class="container">
+  <div class="half-div-section"></div>
+  {% include open.html %}
 
-{% include services.html %}
+  <a name="two"></a>
+  <div class="div-section"></div>
+  {% include services.html %}
 
-{% include contact.html %}
+  <a name="three"></a>
+  <div class="div-section"></div>
+  {% include contact.html %}
+</div>
