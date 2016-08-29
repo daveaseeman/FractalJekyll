@@ -4814,6 +4814,9 @@ html > body .full-screen {
   font-family: "Roboto";
   font-weight: 300;
   letter-spacing: .1rem; }
+  @media only screen and (min-width: 601px) {
+    .nav-font {
+      letter-spacing: normal; } }
 
 .zero-bottom-margin {
   margin-bottom: 0; }

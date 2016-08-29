@@ -230,6 +230,9 @@ html>body .full-screen {
   font-family: $head-font;
   font-weight: $head-font-light;
   letter-spacing: .1rem;
+  @media #{$medium-and-up} {
+    letter-spacing: normal;
+  }
 }
 
 .zero-bottom-margin {
