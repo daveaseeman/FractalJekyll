@@ -2099,7 +2099,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #ee6e73; }
+  border-left: 5px solid #F0533C; }
 
 i {
   line-height: inherit; }
@@ -3018,7 +3018,6 @@ input[type=range] + .thumb {
 nav {
   color: #fff;
   position: relative;
-  background-color: #F0533C;
   width: 100%;
   height: 56px;
   line-height: 56px; }
@@ -3208,73 +3207,73 @@ small {
 .thin {
   font-weight: 200; }
 
-.flow-text {
+.flow-text, .inject-flow p {
   font-weight: 300; }
   @media only screen and (min-width: 360px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.2rem; } }
   @media only screen and (min-width: 390px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.224rem; } }
   @media only screen and (min-width: 420px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.248rem; } }
   @media only screen and (min-width: 450px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.272rem; } }
   @media only screen and (min-width: 480px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.296rem; } }
   @media only screen and (min-width: 510px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.32rem; } }
   @media only screen and (min-width: 540px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.344rem; } }
   @media only screen and (min-width: 570px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.368rem; } }
   @media only screen and (min-width: 600px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.392rem; } }
   @media only screen and (min-width: 630px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.416rem; } }
   @media only screen and (min-width: 660px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.44rem; } }
   @media only screen and (min-width: 690px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.464rem; } }
   @media only screen and (min-width: 720px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.488rem; } }
   @media only screen and (min-width: 750px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.512rem; } }
   @media only screen and (min-width: 780px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.536rem; } }
   @media only screen and (min-width: 810px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.56rem; } }
   @media only screen and (min-width: 840px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.584rem; } }
   @media only screen and (min-width: 870px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.608rem; } }
   @media only screen and (min-width: 900px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.632rem; } }
   @media only screen and (min-width: 930px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.656rem; } }
   @media only screen and (min-width: 960px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.68rem; } }
   @media only screen and (max-width: 360px) {
-    .flow-text {
+    .flow-text, .inject-flow p {
       font-size: 1.2rem; } }
 
 .card-panel {
@@ -3600,29 +3599,15 @@ button.btn-floating {
   display: block; }
 
 .collapsible {
-  border: 1px solid #ddd;
-  border-radius: 2px;
   margin: 0.33333rem 0 0.66667rem 0; }
 
 .collapsible-header {
-  font-size: 1.64rem;
-  font-family: "Roboto";
-  font-weight: 400;
   display: block;
   cursor: pointer;
   min-height: 3rem;
   line-height: 2.25rem;
   padding: 0.5rem 0.5rem;
-  background-color: #fff;
   border-radius: 2px; }
-  .collapsible-header i {
-    width: 2rem;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    display: block;
-    float: left;
-    text-align: center;
-    margin-right: 1rem; }
 
 .collapsible-body {
   display: none;
@@ -3670,11 +3655,16 @@ button.btn-floating {
   box-shadow: none; }
   .collapsible.popout > li {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin: 0 24px;
-    transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    margin: 0 15px;
+    transition: margin 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.75); }
+  @media only screen and (min-width: 601px) {
+    .collapsible.popout > li {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      margin: 0 15%;
+      transition: margin 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.75); } }
   .collapsible.popout > li.active {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-    margin: 16px 0; }
+    margin: 5px 0; }
 
 select:focus {
   outline: 1px solid #c9f3ef; }
@@ -4639,12 +4629,38 @@ html, body {
 html > body .full-screen {
   height: auto; }
 
-#splash {
-  text-align: center;
-  position: relative;
-  background: url(/assets/img/splash.svg) center center no-repeat #F0533C;
-  background-size: 75% 75%, contain;
-  background-color: #F0533C; }
+.parallax-container {
+  width: 100%;
+  height: -webkit-calc(100% - 56px);
+  height: -moz-calc(100% - 56px);
+  height: calc(100% - 56px);
+  min-height: -webkit-calc(100% - 56px);
+  min-height: -moz-calc(100% - 56px);
+  min-height: calc(100% - 56px); }
+  @media only screen and (min-width: 601px) {
+    .parallax-container {
+      height: -webkit-calc(100% - 64px);
+      height: -moz-calc(100% - 64px);
+      height: calc(100% - 64px);
+      min-height: -webkit-calc(100% - 64px);
+      min-height: -moz-calc(100% - 64px);
+      min-height: calc(100% - 64px); } }
+
+.popout-subtext {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.1; }
+  @media only screen and (min-width: 601px) {
+    .popout-subtext {
+      width: 400px; } }
+  @media only screen and (min-width: 993px) {
+    .popout-subtext {
+      width: 500px; } }
+
+.small-paragraph {
+  margin: .5rem auto;
+  line-height: 1.0; }
 
 .splash-align {
   margin: 0% 12.5% 0% 12.5%; }
@@ -4707,16 +4723,13 @@ html > body .full-screen {
 #people {
   background: #ffffff; }
 
-.brand-color {
+.brand-color, .parallax-container {
   background: #F0533C;
   color: #ffffff; }
 
-.half-div {
-  display: inline-block; }
-
 #footer {
   padding-top: 1rem;
-  background: #F0533C;
+  background: black;
   padding-bottom: 5px;
   color: #ffffff; }
 
@@ -4729,6 +4742,22 @@ html > body .full-screen {
 
 .fa-circle {
   color: #F0533C; }
+
+.fa-rotate-45 {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block; }
+
+.fa-rotate-neg-45 {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  display: inline-block; }
 
 .fa, .fa-stack {
   position: relative; }
@@ -4750,38 +4779,30 @@ html > body .full-screen {
   height: inherit; }
 
 hr {
+  width: 70%;
+  padding: 2rem 0 2rem 0;
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #F0533C;
+  border-top: 1px solid #ccc;
   border-radius: 1px;
-  margin: 1em 0;
+  margin: 0 auto;
   padding: 0; }
 
-#sticker {
-  position: relative;
-  z-index: 50000; }
-
-.negative-stack, #open, #contact, #footer {
+.negative-stack, .parallax-container, #open, #contact, #footer {
   position: relative;
   z-index: -1; }
 
-.avatar {
-  width: 10rem;
-  height: 10rem;
-  margin: 2.5rem auto;
-  -webkit-border-radius: 5rem;
-  -moz-border-radius: 5rem;
-  border-radius: 5rem; }
-
-.avatar-div {
-  height: 15rem; }
+.nav-color {
+  background-color: black; }
 
 .link-padder {
-  padding-top: 30px; }
+  padding-top: 35px; }
 
-.li-padder li {
-  padding: .2rem 0 .2rem 0; }
+.padder {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: .2rem 0 .2rem 0; }
 
 .inline-list {
   margin: 0;

@@ -17,10 +17,10 @@
           }
           var $img = $this.children("img").first();
           var img_height = $img.height();
-          var parallax_dist = img_height - container_height;
+          var parallax_dist = (img_height - container_height);
           var bottom = $this.offset().top + container_height;
           var top = $this.offset().top;
-          var scrollTop = $(window).scrollTop();
+          var scrollTop = $(window).scrollTop() * 2 ;
           var windowHeight = window.innerHeight;
           var windowBottom = scrollTop + windowHeight;
           var percentScrolled = (windowBottom - top) / (container_height + windowHeight);
