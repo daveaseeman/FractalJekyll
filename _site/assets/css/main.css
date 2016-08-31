@@ -4817,6 +4817,8 @@ html > body .full-screen {
   @media only screen and (min-width: 601px) {
     .nav-font {
       letter-spacing: normal; } }
+  .nav-font li a {
+    padding: 0 5px; }
 
 .zero-bottom-margin {
   margin-bottom: 0; }

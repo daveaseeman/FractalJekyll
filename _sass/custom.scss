@@ -233,6 +233,11 @@ html>body .full-screen {
   @media #{$medium-and-up} {
     letter-spacing: normal;
   }
+  li {
+    a {
+      padding: 0 5px;
+    }
+  }
 }
 
 .zero-bottom-margin {
