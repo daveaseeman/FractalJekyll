@@ -3,17 +3,21 @@ layout: null
 ---
 @charset "utf-8";
 @import "https://fonts.googleapis.com/css?family=Roboto:300,500|Source+Code+Pro:300";
+@import "https://fonts.googleapis.com/css?family=Scope+One";
 
 // Variables //
 $brand-color: #F0533C;
+// $brand-color: #637484;
 $background-color: #ffffff;
 $text-color: #dddddd;
 $link-color: #4078c0;
 
 $head-font: "Roboto";
+// $head-font: "Unica One";
 $head-font-weight: 500;
 $head-font-light: 300;
-$body-font: "Source Code Pro";
+// $body-font: "Source Code Pro";
+$body-font: "Scope One";
 $body-font-weight: 300;
 
 $splash-width: 75%;
@@ -42,7 +46,7 @@ $avatar-size: 10rem;
 @import "components/tabs";
 // @import "components/tooltip";
 @import "components/buttons";
-// @import "components/dropdown";
+@import "components/dropdown";
 // @import "components/waves";
 // @import "components/modal";
 @import "components/collapsible";
@@ -50,7 +54,7 @@ $avatar-size: 10rem;
 // @import "components/materialbox";
 @import "components/forms/forms";
 // @import "components/table_of_contents";
-// @import "components/sideNav";
+@import "components/sideNav";
 // @import "components/preloader";
 // @import "components/slider";
 // @import "components/carousel";
