@@ -2066,7 +2066,7 @@ a {
 .z-depth-0, .card-panel, .card, .btn, .btn-large, .btn-floating, .collapsible {
   box-shadow: none !important; }
 
-.z-depth-1, nav, .btn:hover, .btn-large:hover, .dropdown-content, .side-nav {
+.z-depth-1, nav, .btn:hover, .btn-large:hover, .dropdown-content {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .z-depth-1-half, .btn-floating:hover {
@@ -3142,7 +3142,7 @@ a {
 
 html {
   line-height: 1.5;
-  font-family: "Scope One";
+  font-family: "Source Code Pro";
   font-weight: 300;
   color: rgba(0, 0, 0, 0.87); }
   @media only screen and (min-width: 0) {
@@ -3161,10 +3161,6 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1rem;
   line-height: 1.1;
   text-transform: uppercase; }
-
-h2 {
-  font-weight: 500;
-  letter-spacing: .75rem; }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit; }
@@ -3218,67 +3214,67 @@ small {
   font-weight: 300; }
   @media only screen and (min-width: 360px) {
     .flow-text, .inject-flow p {
-      font-size: 1.2rem; } }
+      font-size: 1.1rem; } }
   @media only screen and (min-width: 390px) {
     .flow-text, .inject-flow p {
-      font-size: 1.224rem; } }
+      font-size: 1.111rem; } }
   @media only screen and (min-width: 420px) {
     .flow-text, .inject-flow p {
-      font-size: 1.248rem; } }
+      font-size: 1.122rem; } }
   @media only screen and (min-width: 450px) {
     .flow-text, .inject-flow p {
-      font-size: 1.272rem; } }
+      font-size: 1.133rem; } }
   @media only screen and (min-width: 480px) {
     .flow-text, .inject-flow p {
-      font-size: 1.296rem; } }
+      font-size: 1.144rem; } }
   @media only screen and (min-width: 510px) {
     .flow-text, .inject-flow p {
-      font-size: 1.32rem; } }
+      font-size: 1.155rem; } }
   @media only screen and (min-width: 540px) {
     .flow-text, .inject-flow p {
-      font-size: 1.344rem; } }
+      font-size: 1.166rem; } }
   @media only screen and (min-width: 570px) {
     .flow-text, .inject-flow p {
-      font-size: 1.368rem; } }
+      font-size: 1.177rem; } }
   @media only screen and (min-width: 600px) {
     .flow-text, .inject-flow p {
-      font-size: 1.392rem; } }
+      font-size: 1.188rem; } }
   @media only screen and (min-width: 630px) {
     .flow-text, .inject-flow p {
-      font-size: 1.416rem; } }
+      font-size: 1.199rem; } }
   @media only screen and (min-width: 660px) {
     .flow-text, .inject-flow p {
-      font-size: 1.44rem; } }
+      font-size: 1.21rem; } }
   @media only screen and (min-width: 690px) {
     .flow-text, .inject-flow p {
-      font-size: 1.464rem; } }
+      font-size: 1.221rem; } }
   @media only screen and (min-width: 720px) {
     .flow-text, .inject-flow p {
-      font-size: 1.488rem; } }
+      font-size: 1.232rem; } }
   @media only screen and (min-width: 750px) {
     .flow-text, .inject-flow p {
-      font-size: 1.512rem; } }
+      font-size: 1.243rem; } }
   @media only screen and (min-width: 780px) {
     .flow-text, .inject-flow p {
-      font-size: 1.536rem; } }
+      font-size: 1.254rem; } }
   @media only screen and (min-width: 810px) {
     .flow-text, .inject-flow p {
-      font-size: 1.56rem; } }
+      font-size: 1.265rem; } }
   @media only screen and (min-width: 840px) {
     .flow-text, .inject-flow p {
-      font-size: 1.584rem; } }
+      font-size: 1.276rem; } }
   @media only screen and (min-width: 870px) {
     .flow-text, .inject-flow p {
-      font-size: 1.608rem; } }
+      font-size: 1.287rem; } }
   @media only screen and (min-width: 900px) {
     .flow-text, .inject-flow p {
-      font-size: 1.632rem; } }
+      font-size: 1.298rem; } }
   @media only screen and (min-width: 930px) {
     .flow-text, .inject-flow p {
-      font-size: 1.656rem; } }
+      font-size: 1.309rem; } }
   @media only screen and (min-width: 960px) {
     .flow-text, .inject-flow p {
-      font-size: 1.68rem; } }
+      font-size: 1.32rem; } }
   @media only screen and (max-width: 360px) {
     .flow-text, .inject-flow p {
       font-size: 1.2rem; } }
@@ -4825,6 +4821,10 @@ html, body {
 html > body .full-screen {
   height: auto; }
 
+.div-bar {
+  border-left: 0.5rem solid #F0533C;
+  margin: 2rem auto; }
+
 .splash-container {
   width: 100%;
   height: -webkit-calc(100% - 56px);
@@ -4990,7 +4990,8 @@ html > body .full-screen {
   z-index: -1; }
 
 .nav-color {
-  background-color: white; }
+  background-color: white;
+  opacity: 0.95; }
 
 .table {
   display: table;
@@ -5002,16 +5003,7 @@ html > body .full-screen {
       float: right; } }
 
 .nav-font {
-  font-family: "Roboto";
-  font-weight: 300;
-  letter-spacing: .1rem;
   color: black; }
-  @media only screen and (min-width: 601px) {
-    .nav-font {
-      letter-spacing: normal; } }
-  .nav-font li a {
-    color: black;
-    padding: 0 5px; }
 
 #navbar-logo {
   color: black; }

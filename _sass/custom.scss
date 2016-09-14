@@ -13,6 +13,11 @@ html>body .full-screen {
   height:auto;
 }
 
+.div-bar {
+  border-left: 0.5rem solid $brand-color;
+  margin: 2rem auto;
+}
+
 .splash-container {
   $max-height: 100%;
   width:100%;
@@ -215,6 +220,8 @@ html>body .full-screen {
 
 .nav-color {
   background-color: white;
+  opacity:0.95;
+  // border-bottom:1px solid $brand-color;
 }
 
 .table {
@@ -227,19 +234,19 @@ html>body .full-screen {
 }
 
 .nav-font {
-  font-family: $head-font;
-  font-weight: $head-font-light;
-  letter-spacing: .1rem;
+  // font-family: $head-font;
+  // font-weight: $head-font-light;
+  // letter-spacing: .1rem;
   color: black;
-  @media #{$medium-and-up} {
-    letter-spacing: normal;
-  }
-  li {
-    a {
-      color: black;
-      padding: 0 5px;
-    }
-  }
+  // @media #{$medium-and-up} {
+  //   letter-spacing: normal;
+  // }
+  // li {
+  //   a {
+  //     color: black;
+  //     padding: 0 5px;
+  //   }
+  // }
 }
 
 #navbar-logo {
