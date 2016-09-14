@@ -74,28 +74,6 @@
     
 
 <a name="one"></a>
-<!-- <div id="sticker">
-<div class="navbar">
-<nav class="nav-color z-depth-0" style="border-bottom:1px solid #aaa">
-<div class="nav-wrapper">
-<a class="hide-on-med-and-down" href="#splash" style="text-align: left;">
-<img src="/assets/img/black-logo.svg" style="position:absolute;height:95%;padding:.25rem 0 .25rem 1rem;"></img>
-</a>
-<div class="table hide-on-large">
-<ul class="nav-font">
-<li><a href="#one">WHO WE ARE</a></li>
-<li >|</li>
-<li><a href="#two">WHAT WE DO</a></li>
-<li >|</li>
-<li><a href="#three">WORK WITH US</a></li>
-</ul>
-</div>
-</div>
-</nav>
-</div>
-</div> -->
-
-
 <div class="navbar-fixed">
   <nav class="nav-color z-depth-0">
     <div class="nav-wrapper">
@@ -103,8 +81,8 @@
       <a href="#" data-activates="slide-out" class="button-collapse right show-on-large" style="color:black;margin-right:1rem;">MENU</a>
       <ul class="side-nav nav-font" id="slide-out">
         <li style="padding-left:5px;">NAVIGATE:</li>
-        <li><a href="#one">ABOUT US</a></li>
-        <li><a href="#two">OUR SERVICES</a></li>
+        <li><a href="#one">WHO WE ARE</a></li>
+        <li><a href="#two">WHAT WE DO</a></li>
         <li><a href="#three">LET'S TALK</a></li>
         <li><div class="divider"></div></li>
         <li style="padding-left:5px;">CONNECT:</li>
@@ -117,37 +95,6 @@
   </nav>
 </div>
 
-
-<!-- <div class="navbar-fixed">
-  <nav class="nav-color">
-    <div class="nav-wrapper z-depth-0">
-      <a class="hide-on-med-and-down" href="#splash">
-        <img src="/assets/img/black-logo.svg" style="position:absolute;height:95%;padding:.25rem 0 .25rem 1rem;"></img>
-      </a>
-      <ul class="left">
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Menu <span class="fa fa-bars" aria-hidden="true"></span></a></li>
-      </ul>
-      <ul id="dropdown1" class="left dropdown-content">
-        <li style="white-space:nowrap;"><a href="#one">WHO WE ARE</a></li>
-        <li style="white-space:nowrap;"><a href="#two">WHAT WE DO</a></li>
-        <li style="white-space:nowrap;"><a href="#three">WORK WITH US</a></li>
-      </ul>
-    </div>
-  </nav>
-</div> -->
-
-<script>
-$( document ).ready(function(){
-  $('.button-collapse').sideNav({
-        menuWidth: 300,
-        closeOnClick: true,
-        edge: 'right', // <--- CHECK THIS OUT
-      }
-    );
-    $('.collapsible').collapsible();
-  })
-</script>
-
 <script>
 $(function() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -158,6 +105,7 @@ $(function() {
         $('html, body').animate({
           scrollTop: target.offset().top
         }, 1000);
+        $('.button-collapse').sideNav('hide');
         return false;
       }
     }
@@ -165,10 +113,21 @@ $(function() {
 });
 </script>
 
+<script>
+$( document ).ready(function(){
+  $('.button-collapse').sideNav({
+        menuWidth: 300,
+        edge: 'right', // <--- CHECK THIS OUT
+      }
+    );
+    $('.collapsible').collapsible();
+  })
+</script>
+
 
 <div class="container">
   <div class="half-div-section"></div>
-  <h3>about us</h3>
+  <h3>who we are</h3>
 <p class="flow-text">We are designers and engineers who love making products. Team up with us to develop your ideas from concept to manufacture.</p>
 
 <div class="row center zero-bottom-margin negative-stack">
@@ -205,7 +164,7 @@ $(function() {
 
   <a name="two"></a>
   <div class="div-section"></div>
-  <h3>our services</h3>
+  <h3>what we do</h3>
 <ul class="collapsible" data-collapsible="accordion">
   <li class="div-bar">
     <span class="collapsible-header">
