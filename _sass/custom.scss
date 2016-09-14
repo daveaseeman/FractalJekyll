@@ -181,7 +181,7 @@ html>body .full-screen {
 
 .eyebrow {
   width:100%;
-  border-top: .25px solid white;
+  border-bottom: .25px solid white;
   color: $background-color;
   height: inherit;
 }
@@ -250,9 +250,16 @@ html>body .full-screen {
 }
 
 #navbar-logo {
-  color: black;
-  svg {
-    fill: currentColor;
+  position:absolute;
+  height: $navbar-height-mobile*.75;
+  padding-left:.25rem;
+  margin-top: $navbar-height-mobile*.125;
+  margin-bottom: $navbar-height-mobile*.125;
+  @media #{$medium-and-up} {
+    height: $navbar-height*.95;
+    margin-top: $navbar-height-mobile*.025;
+    margin-bottom: $navbar-height-mobile*.025;
+
   }
 }
 

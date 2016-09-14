@@ -77,8 +77,8 @@
 <div class="navbar-fixed">
   <nav class="nav-color z-depth-0">
     <div class="nav-wrapper">
-      <a href="#!" class="hide-on-med-and-down"><img src="/assets/img/black-logo.svg"  style="position:absolute;height:95%;padding:.25rem 0 .25rem 1rem;"></img></a>
-      <a href="#" data-activates="slide-out" class="button-collapse right show-on-large" style="color:black;margin-right:1rem;">MENU</a>
+      <a href="#!"><img id="navbar-logo" src="/assets/img/black-logo.svg"></img></a>
+      <a href="#" data-activates="slide-out" class="button-collapse right show-on-large" style="color:black;margin-right:1rem;top: 50%;transform: translateY(-50%);">MENU</a>
       <ul class="side-nav nav-font" id="slide-out">
         <li style="padding-left:5px;">NAVIGATE:</li>
         <li><a href="#one">WHO WE ARE</a></li>
@@ -483,7 +483,7 @@ $( document ).ready(function(){
           </div>
         </div>
 
-        <div class="col s2 offset-s4 m2 offset-m8">
+        <div class="col s12 center m2 offset-m8">
           <div id="mce-responses" class="clear">
             <div class="response" id="mce-error-response" style="display:none"></div>
             <div class="response" id="mce-success-response" style="display:none"></div>
@@ -506,9 +506,101 @@ $( document ).ready(function(){
   <footer id="footer">
   <div class="container">
     <div class="row" style="margin-bottom:0;">
+
       <div class="col s12 m4">
-        <h6 class="center">Who We Help</h6>
-        <div class="eyebrow"></div>
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header active">
+              <h6 class="center eyebrow">Who We Help</h6>
+            </div>
+            <div class="collapsible-body">
+              <div class="list-left">
+                <ul class="left">
+                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Company - and Im interested in your services'><i class='fa fa-building fa-fw' aria-hidden='true'></i> Corporations</a></li>
+                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Startup - and Im interested in your services'><i class='fa fa-line-chart fa-fw' aria-hidden='true'></i> Startups</a></li>
+                </ul>
+              </div>
+              <div class="list-right">
+                <ul class="left">
+                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Entrepreneur - and Im interested in your services'><i class='fa fa-briefcase fa-fw' aria-hidden='true'></i> Entrepreneurs</a></li>
+                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Innovator - and Im interested in your services'><i class='fa fa-lightbulb-o fa-fw' aria-hidden='true'></i> Innovators</a></li>
+                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Inventor - and Im interested in your services'><i class='fa fa-cog fa-fw' aria-hidden='true'></i> Inventors</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col s12 m4">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header active">
+              <h6 class="center eyebrow">Contact</h6>
+            </div>
+            <div class="collapsible-body">
+              <div class="list-left">
+                <ul class="left">
+                  <li><i class="fa fa-phone fa-fw" aria-hidden="true"></i> Call
+                  <ol>
+                    <li><a href='tel:615-497-1953'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Evan</a></li>
+                    <li><a href='tel:615-944-5829'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Dave</a></li>
+                    <li><a href='tel:630-485-8482'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Mitch</a></li>
+                  </ol>
+                </li>
+                </ul>
+              </div>
+              <div class="list-right">
+                <ul class="left">
+                  <li><i class="fa fa-envelope fa-fw" aria-hidden="true"></i> Email
+                  <ol>
+                    <li><a href='mailto:evan@fractalhardware.com?subject=Hey Evan!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Evan</a></li>
+                    <li><a href='mailto:dave@fractalhardware.com?subject=Hey Dave!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Dave</a></li>
+                    <li><a href='mailto:mitch@fractalhardware.com?subject=Hey Mitch!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Mitch</a></li>
+                  </ol>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="col s12 m4">
+        <ul class="collapsible" data-collapsible="expandable">
+          <li>
+            <div class="collapsible-header active">
+              <h6 class="center eyebrow">Social</h6>
+            </div>
+            <div class="collapsible-body">
+              <div class="list-left">
+                <ul class="left">
+                  <li><a href="https://www.instagram.com/fractalhardware/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i> Instagram</a></li>
+                  <li><a href="https://www.facebook.com/fractalhardware/"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i> Facebook</a></li>
+                  <li><a href="https://twitter.com/FractalHardware"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> Twitter</a></li>
+                  <li><a href="https://www.linkedin.com/company/fractalhardware"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></li>
+                </ul>
+              </div>
+              <div class="list-right">
+                <ul class="left">
+                  <li><a href="https://github.com/FractalHardware"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> Github</a></li>
+                  <li><a href="https://angel.co/fractalhardware"><i class="fa fa-angellist fa-fw" aria-hidden="true"></i> AngelList</a></li>
+                  <li><a href="https://medium.com/fractalhardware"><i class="fa fa-medium fa-fw" aria-hidden="true"></i> Medium</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+
+
+    <!-- <div class="row" style="margin-bottom:0;">
+      <div class="col s12 m4">
+          <h6 class="center eyebrow">Who We Help</h6>
         <div class="list-left">
           <ul class="left">
             <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Company - and Im interested in your services'><i class='fa fa-building fa-fw' aria-hidden='true'></i> Corporations</a></li>
@@ -523,6 +615,7 @@ $( document ).ready(function(){
           </ul>
         </div>
       </div>
+
       <div class="col s12 m4">
         <h6 class="center">Contact</h6>
         <div class="eyebrow"></div>
@@ -568,7 +661,7 @@ $( document ).ready(function(){
           </ul>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <ul class="center" style="margin:0 auto; font-size:small;">
       <li><img id="tristar"></img></li>

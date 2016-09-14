@@ -4970,7 +4970,7 @@ html > body .full-screen {
 
 .eyebrow {
   width: 100%;
-  border-top: .25px solid white;
+  border-bottom: .25px solid white;
   color: #ffffff;
   height: inherit; }
 
@@ -5006,9 +5006,16 @@ html > body .full-screen {
   color: black; }
 
 #navbar-logo {
-  color: black; }
-  #navbar-logo svg {
-    fill: currentColor; }
+  position: absolute;
+  height: 42px;
+  padding-left: .25rem;
+  margin-top: 7px;
+  margin-bottom: 7px; }
+  @media only screen and (min-width: 601px) {
+    #navbar-logo {
+      height: 60.8px;
+      margin-top: 1.4px;
+      margin-bottom: 1.4px; } }
 
 .zero-bottom-margin {
   margin-bottom: 0; }
