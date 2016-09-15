@@ -1,6 +1,6 @@
 <a name="two"></a>
-<h3>what we do</h3>
-<ul id="staggered-list-1" class="collapsible" data-collapsible="expandable">
+<h3 id="what">what we do</h3>
+<ul id="id" class="collapsible" data-collapsible="expandable">
   <li class="div-bar">
     <div class="collapsible-header">
       <h5>Industrial Design</h5>
@@ -43,7 +43,7 @@
   </li>
 </ul>
 
-<ul id="staggered-list-2" class="collapsible" data-collapsible="expandable">
+<ul id="ee" class="collapsible" data-collapsible="expandable">
   <li class="div-bar">
     <span class="collapsible-header">
       <h5>Electrical Engineering</h5>
@@ -85,7 +85,7 @@
   </li>
 </ul>
 
-<ul id="staggered-list-3" class="collapsible" data-collapsible="expandable">
+<ul id="me" class="collapsible" data-collapsible="expandable">
   <li class="div-bar">
     <span class="collapsible-header">
       <h5>Mechanical Engineering</h5>
@@ -130,15 +130,18 @@
 
 <script>
 var options = [
-  {selector: '#staggered-list-1', offset: 100, callback: function(el) {
-    Materialize.showStaggeredList($(el));
-  } },
-  {selector: '#staggered-list-2', offset: 100, callback: function(el) {
-    Materialize.showStaggeredList($(el));
-  } },
-  {selector: '#staggered-list-3', offset: 100, callback: function(el) {
-    Materialize.showStaggeredList($(el));
-  } },
-];
-Materialize.scrollFire(options);
+    {selector: '#what', offset: 50, callback: function() {
+      $('#what').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#id', offset: 50, callback: function() {
+      $('#id').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#ee', offset: 50, callback: function() {
+      $('#ee').addClass('animated fadeIn');
+    } },
+    {selector: '#me', offset: 50, callback: function() {
+      $('#me').addClass('animated fadeIn');
+    } },
+  ];
+  Materialize.scrollFire(options);
 </script>
