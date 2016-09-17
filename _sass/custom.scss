@@ -14,24 +14,24 @@ html>body .full-screen, .fullscreen-top {
   height:auto;
 }
 
-.full-screen-top {
-  $max-height: 100%;
-  width:100%;
-  height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
-  height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
-  height:         calc(#{$max-height} - #{$navbar-height-mobile});
-  min-height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
-  min-height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
-  min-height:         calc(#{$max-height} - #{$navbar-height-mobile});
-  @media #{$medium-and-up} {
-    height: -webkit-calc(#{$max-height} - #{$navbar-height});
-    height:    -moz-calc(#{$max-height} - #{$navbar-height});
-    height:         calc(#{$max-height} - #{$navbar-height});
-    min-height: -webkit-calc(#{$max-height} - #{$navbar-height});
-    min-height:    -moz-calc(#{$max-height} - #{$navbar-height});
-    min-height:         calc(#{$max-height} - #{$navbar-height});
-    }
-}
+// .full-screen-top {
+//   $max-height: 100%;
+//   width:100%;
+//   height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
+//   height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
+//   height:         calc(#{$max-height} - #{$navbar-height-mobile});
+//   min-height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
+//   min-height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
+//   min-height:         calc(#{$max-height} - #{$navbar-height-mobile});
+//   @media #{$medium-and-up} {
+//     height: -webkit-calc(#{$max-height} - #{$navbar-height});
+//     height:    -moz-calc(#{$max-height} - #{$navbar-height});
+//     height:         calc(#{$max-height} - #{$navbar-height});
+//     min-height: -webkit-calc(#{$max-height} - #{$navbar-height});
+//     min-height:    -moz-calc(#{$max-height} - #{$navbar-height});
+//     min-height:         calc(#{$max-height} - #{$navbar-height});
+//     }
+// }
 
 .div-bar {
   border-left: 0.5rem solid $brand-color;
@@ -39,7 +39,7 @@ html>body .full-screen, .fullscreen-top {
 }
 
 .animated {
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 2s;
 }
 
 #what, #id, #me, #ee, #contact-row, #footer-row, #credits {
