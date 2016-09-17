@@ -64,7 +64,10 @@
 <script>
 var options = [
     {selector: '#contact-row', offset: 50, callback: function() {
-      $('#contact-row').addClass('animated fadeIn').css("opacity", "1");
+      $('#contact-row').css("opacity", "1");
+    } },
+    {selector: '#contact-row', offset: 50, callback: function() {
+      $('#contact-row').addClass('animated fadeIn');
     } },
   ];
   Materialize.scrollFire(options);
