@@ -31,21 +31,21 @@
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
-              <h6 class="center eyebrow">Contact</h6>
+              <h6 class="center eyebrow">Contact Us</h6>
             </div>
             <div class="collapsible-body">
               <div class="list-left">
                 <ul class="left">
-                    <li><a href='tel:615-497-1953'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Evan</a></li>
-                    <li><a href='tel:615-944-5829'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Dave</a></li>
-                    <li><a href='tel:630-485-8482'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> Mitch</a></li>
+                  {% assign contacts = site.data.contacts %}{% for contact in contacts %}
+                  <li><a href='tel:{{contact.phone}}'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> {{contact.name}}</a></li>
+                  {% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                    <li><a href='mailto:evan@fractalhardware.com?subject=Hey Evan!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Evan</a></li>
-                    <li><a href='mailto:dave@fractalhardware.com?subject=Hey Dave!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Dave</a></li>
-                    <li><a href='mailto:mitch@fractalhardware.com?subject=Hey Mitch!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> Mitch</a></li>
+                  {% assign contacts = site.data.contacts %}{% for contact in contacts %}
+                  <li><a href='mailto:{{contact.email}}?subject=Hey {{contact.name}}!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> {{contact.name}}</a></li>
+                  {% endfor %}
                 </ul>
               </div>
             </div>
@@ -63,17 +63,16 @@
             <div class="collapsible-body">
               <div class="list-left">
                 <ul class="left">
-                  <li><a href="https://www.instagram.com/fractalhardware/"><i class="fa fa-instagram fa-fw" aria-hidden="true"></i> Instagram</a></li>
-                  <li><a href="https://www.facebook.com/fractalhardware/"><i class="fa fa-facebook fa-fw" aria-hidden="true"></i> Facebook</a></li>
-                  <li><a href="https://twitter.com/FractalHardware"><i class="fa fa-twitter fa-fw" aria-hidden="true"></i> Twitter</a></li>
-                  <li><a href="https://www.linkedin.com/company/fractalhardware"><i class="fa fa-linkedin fa-fw" aria-hidden="true"></i> LinkedIn</a></li>
+                  {% assign social = site.data.social %}{% for account in social %}{% if account.side == true %}
+                  <li><a href="{{account.url}}"><i class="fa fa-{{account.icon}} fa-fw" aria-hidden="true"></i> {{account.name}}</a></li>
+                  {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                  <li><a href="https://github.com/FractalHardware"><i class="fa fa-github-alt fa-fw" aria-hidden="true"></i> Github</a></li>
-                  <li><a href="https://angel.co/fractalhardware"><i class="fa fa-angellist fa-fw" aria-hidden="true"></i> AngelList</a></li>
-                  <li><a href="https://medium.com/fractalhardware"><i class="fa fa-medium fa-fw" aria-hidden="true"></i> Medium</a></li>
+                  {% for account in social %}{% if account.side == false %}
+                  <li><a href="{{account.url}}"><i class="fa fa-{{account.icon}} fa-fw" aria-hidden="true"></i> {{account.name}}</a></li>
+                  {% endif %}{% endfor %}
                 </ul>
               </div>
             </div>
