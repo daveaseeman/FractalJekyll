@@ -1,0 +1,9 @@
+- name: Dave Seeman
+  role: Mechanical Engineer
+  photo: /assets/img/portrait.png
+- name: Evan Reese
+  role: Industrial Designer
+  photo: /assets/img/portrait.png
+- name: Mitch Meiss
+  role: Electrical Engineer
+  photo: /assets/img/portrait.png

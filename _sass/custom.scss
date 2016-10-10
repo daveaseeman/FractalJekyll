@@ -33,6 +33,14 @@ html>body .full-screen, .fullscreen-top {
 //     }
 // }
 
+.member-name {
+  border-bottom: 0.25rem solid $brand-color;
+}
+
+.member-photo {
+  max-width:200px;
+}
+
 .div-bar {
   border-left: 0.5rem solid $brand-color;
   margin: 2rem auto;
@@ -42,7 +50,7 @@ html>body .full-screen, .fullscreen-top {
   -webkit-animation-duration: 2s;
 }
 
-#what, #id, #me, #ee, #contact-row, #footer-row, #credits {
+#what, #id, #me, #ee, #meet, #members, #contact-row, #footer-row, #credits {
   opacity:0;
 }
 

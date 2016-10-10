@@ -1,35 +1,23 @@
-<a name="one"></a>
-<div id="people" class="link-padder full-screen">
+<h3 id="meet">meet the team</h3>
 
-
-    <div class="row avatar-row">
-      <div class="col s12 m4 avatar-div center">
-        <img class="avatar" src="/assets/img/people/dave.png"></img>
-      </div>
-      <div class="col s12 m8 avatar-div brand-color">
-        <p></p>
-      </div>
-    </div>
-
-    <div class="row avatar-row">
-      <div class="col s12 m8 avatar-div brand-color">
-        <p></p>
-      </div>
-      <div class="col s12 m4 avatar-div center">
-        <img class="avatar" src="/assets/img/people/evan.png"></img>
-      </div>
-    </div>
-
-    <div class="row avatar-row">
-      <div class="col s12 m4 avatar-div center">
-        <img class="avatar" src="/assets/img/people/mitch.png"></img>
-      </div>
-      <div class="col s12 m8 avatar-div brand-color">
-        <p></p>
-      </div>
-    </div>
-
-
+<div id="members" class="row avatar-row">
+  {% assign team=site.data.team %}
+  {% for member in team %}
+  <div class="col s12 m4 center">
+    <img class="circle member-photo" src="{{member.photo}}"></img>
+    <h5 class="member-name">{{member.name}}</h5>
+  </div>
+  {% endfor %}
 </div>
 
-<div class="container" style="padding:3rem 0 3rem 0;"><hr></div>
+<script>
+var options = [
+    {selector: '#meet', offset: 50, callback: function() {
+      $('#meet').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#members', offset: 50, callback: function() {
+      $('#members').addClass('animated fadeIn').css("opacity", "1");
+    } }
+  ];
+  Materialize.scrollFire(options);
+</script>
