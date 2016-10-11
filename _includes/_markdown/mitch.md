@@ -1,0 +1,5 @@
+**MITCH MEISS** does Electrical Engineering. He loves technology and is excited with the Internet of Things movement. He believes that connected devices will change the world and is excited to be creating electronics to help fuel the industry.
+
+A bachelor's degree in Electrical Engineering at Iowa State University led to a position with John Deere working within the product design team. He worked with CAN Bus protocol on million dollar machines, adding UI features not previously available to users. After this Mitch moved to Austin Texas to work with Silicon Labs, an exciting, young semiconductor business. He worked as a Field Applications Engineer modifying circuitry and firmware on a device labeled the ‘sensor puck’. This device showcased some of the company's best chips and was used as a prototyping and sales tool. Mitch loves working in collaboration with designers and engineers to create beautiful, integrated products.
+
+When he’s not designing connected electronics, you can find him woodworking, tinkering with electronics, being a coffee snob, or cooking deep dish pizza.

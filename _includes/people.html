@@ -2,12 +2,24 @@
 
 <div id="members" class="row avatar-row">
   {% assign team=site.data.team %}
-  {% for member in team %}
-  <div class="col s12 m4 center">
-    <img class="circle member-photo" src="{{member.photo}}"></img>
-    <h5 class="member-name">{{member.name}}</h5>
-  </div>
-  {% endfor %}
+  <ul class="collapsible" data-collapsible="accordion">
+    {% for member in team %}
+    <li class="member-list">
+      <!-- <div class="col s12 m4"> -->
+        <div class="collapsible-header center">
+          <img class="circle member-photo" src="/assets/img/portraits/{{member.photo}}"></img>
+          <h5 class="member-name">{{member.name}}</h5>
+        </div>
+        <div class="collapsible-body">
+          <div class="member-bio">
+            {% capture markdown %}{% include _markdown/{{member.bio}} %}{% endcapture %}{{ markdown | markdownify }}
+          </div>
+          <div class="member-bio-background"></div>
+        </div>
+      <!-- </div> -->
+    </li>
+    {% endfor %}
+  </ul>
 </div>
 
 <script>

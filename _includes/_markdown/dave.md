@@ -1,0 +1,5 @@
+**DAVE SEEMAN** does Mechanical Engineering. He enjoys absorbing new information and applying it to the problems around us. He believes abundant value will be created from the limitless number of solutions waiting to be built, and he’s eager to play a part in making them.
+
+Dave studied mechanical engineering to become a design engineer, but he was always interested in the full product lifecycle. Dave worked as an engineer, a technical salesman, and a marketer while in college. Eventually he put these skills together and founded a web startup, a process to which he credits learning some quintessential business lessons. Since then, Dave has worked on projects ranging from a large scale 3D printer at UT Knoxville and Oak Ridge National Lab, to material handling at the Uranium Processing Facility in Oak Ridge, to creating consumer and medical products in Nashville.
+
+When Dave is not putting his engineering and business experience to work, he’s usually learning a new skill at home or tinkering with a side project. You might also find him reading a book or thinking about a problem. He might even say he thinks too much, or at least he thinks so.

@@ -41,6 +41,33 @@ html>body .full-screen, .fullscreen-top {
   max-width:200px;
 }
 
+$member-bio-height: 300px;
+
+.member-bio {
+  position:absolute;
+  left:10%;
+  right:10%;
+  height:$member-bio-height;
+  overflow:scroll;
+  p {
+    margin: 1rem auto;
+    padding: 0;
+  }
+}
+
+.member-bio-background {
+  height: $member-bio-height;
+}
+
+.member-list {
+  width:100%;
+  @media #{$medium-and-up} {
+    width:33%;
+    float:left;
+    display:block;
+  }
+}
+
 .div-bar {
   border-left: 0.5rem solid $brand-color;
   margin: 2rem auto;
