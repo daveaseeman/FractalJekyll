@@ -6,20 +6,18 @@ layout: null
 @import "https://fonts.googleapis.com/css?family=Scope+One";
 
 // Variables //
-$brand-color: #3498DB;
-// $brand-color: #56BBFF;
-// $brand-color: #F0533C;
-// $brand-color: #637484;
+// $brand-color: #3498DB; // true blue
+// $brand-color: #56BBFF; // light blue
+$brand-color: #F0533C; // red-orange
+// $brand-color: #637484; // slate blue
 $background-color: #ffffff;
 $text-color: #dddddd;
 $link-color: #4078c0;
 
 $head-font: "Roboto";
-// $head-font: "Unica One";
 $head-font-weight: 500;
 $head-font-light: 300;
 $body-font: "Source Code Pro";
-// $body-font: "Scope One";
 $body-font-weight: 300;
 
 $splash-width: 75%;
