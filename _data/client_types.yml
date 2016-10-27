@@ -1,0 +1,16 @@
+# true=left false=right
+- name: Corporations
+  icon: building
+  side: true
+- name: Startups
+  icon: line-chart
+  side: true
+- name: Entrepreneurs
+  icon: briefcase
+  side: true
+- name: Inventors
+  icon: lightbulb-o
+  side: false
+- name: Innovators
+  icon: cog
+  side: false

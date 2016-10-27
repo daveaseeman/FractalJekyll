@@ -1,8 +1,8 @@
 <footer id="footer">
   <div class="container">
-    <div class="row" style="margin-bottom:0;" id="footer-row">
+    <div class="row" style="margin-bottom:2rem;" id="footer-row">
 
-      <div class="col s12 m4">
+      <div class="col s12 m6">
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
@@ -11,15 +11,16 @@
             <div class="collapsible-body">
               <div class="list-left">
                 <ul class="left">
-                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Company - and Im interested in your services'><i class='fa fa-building fa-fw' aria-hidden='true'></i> Corporations</a></li>
-                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Startup - and Im interested in your services'><i class='fa fa-line-chart fa-fw' aria-hidden='true'></i> Startups</a></li>
+                  {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == true %}
+                  <li><a href="mailto:team@fractalhardware.com?subject=Can you help with our project"><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</a></li>
+                  {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Entrepreneur - and Im interested in your services'><i class='fa fa-briefcase fa-fw' aria-hidden='true'></i> Entrepreneurs</a></li>
-                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Innovator - and Im interested in your services'><i class='fa fa-lightbulb-o fa-fw' aria-hidden='true'></i> Innovators</a></li>
-                  <li><a href='mailto:team@fractalhardware.com?subject=I am or represent a(n) Inventor - and Im interested in your services'><i class='fa fa-cog fa-fw' aria-hidden='true'></i> Inventors</a></li>
+                  {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == false %}
+                  <li><a href="mailto:team@fractalhardware.com?subject=Can you help with our project"><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</a></li>
+                  {% endif %}{% endfor %}
                 </ul>
               </div>
             </div>
@@ -27,7 +28,7 @@
         </ul>
       </div>
 
-      <div class="col s12 m4">
+      <!-- <div class="col s12 m4">
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
@@ -51,14 +52,14 @@
             </div>
           </li>
         </ul>
-      </div>
+      </div> -->
 
 
-      <div class="col s12 m4">
+      <div class="col s12 m6">
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
-              <h6 class="center eyebrow">Social</h6>
+              <h6 class="center eyebrow">Follow Us</h6>
             </div>
             <div class="collapsible-body">
               <div class="list-left">
@@ -84,7 +85,7 @@
     <ul class="center" style="margin:0 auto; font-size:small;" id="credits">
       <li><img id="tristar"></img></li>
       <li>Made in Tennessee by the folks at {{ site.title }}</a></li>
-      <li>{{ site.company }} | <a href="tel:{{ site.phone }}">{{ site.phone }}</a> | {{ site.address }}</li>
+      <li>{{ site.company }} | <a href="tel:{{ site.phone }}">{{ site.phone }}</a> | <a href="https://goo.gl/maps/UDcHPu2i2gy">{{ site.address }}</a></li>
       <li>Content <i class="fa fa-copyright"></i> 2016-{{ site.time | date: '%Y' }} {{ site.company }} | <a href="/privacy">Privacy Policy</a></li>
     </ul>
 
