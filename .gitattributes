@@ -2,3 +2,8 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.svg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+evan.jpg filter=lfs diff=lfs merge=lfs -text
+dave.jpg filter=lfs diff=lfs merge=lfs -text
+mitch.jpg filter=lfs diff=lfs merge=lfs -text
+black-logo.svg filter=lfs diff=lfs merge=lfs -text
+tristar.svg filter=lfs diff=lfs merge=lfs -text
