@@ -129,3 +129,21 @@
 </ul>
 
 </section>
+
+<script>
+var options = [
+    {selector: '#what', offset: 50, callback: function() {
+      $('#what').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#id', offset: 50, callback: function() {
+      $('#id').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#ee', offset: 50, callback: function() {
+      $('#ee').addClass('animated fadeIn').css("opacity", "1");
+    } },
+    {selector: '#me', offset: 50, callback: function() {
+      $('#me').addClass('animated fadeIn').css("opacity", "1");
+    } },
+  ];
+  Materialize.scrollFire(options);
+</script>

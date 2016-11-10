@@ -14,25 +14,6 @@ html>body .full-screen, .fullscreen-top {
   height:auto;
 }
 
-// .full-screen-top {
-//   $max-height: 100%;
-//   width:100%;
-//   height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
-//   height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
-//   height:         calc(#{$max-height} - #{$navbar-height-mobile});
-//   min-height: -webkit-calc(#{$max-height} - #{$navbar-height-mobile});
-//   min-height:    -moz-calc(#{$max-height} - #{$navbar-height-mobile});
-//   min-height:         calc(#{$max-height} - #{$navbar-height-mobile});
-//   @media #{$medium-and-up} {
-//     height: -webkit-calc(#{$max-height} - #{$navbar-height});
-//     height:    -moz-calc(#{$max-height} - #{$navbar-height});
-//     height:         calc(#{$max-height} - #{$navbar-height});
-//     min-height: -webkit-calc(#{$max-height} - #{$navbar-height});
-//     min-height:    -moz-calc(#{$max-height} - #{$navbar-height});
-//     min-height:         calc(#{$max-height} - #{$navbar-height});
-//     }
-// }
-
 .member-name {
   border-bottom: 0.25rem solid $brand-color;
 }
@@ -78,7 +59,7 @@ $member-bio-height: 350px;
   -webkit-animation-duration: 2s;
 }
 
-#meet, #samples, #testimonials, #members, #contact-row, #footer-row, #credits {
+#meet, #testimonials, #what, #id, #ee, #me, #members, #contact-row, #footer-row, #credits {
   opacity:0;
 }
 
@@ -169,4 +150,41 @@ $member-bio-height: 350px;
     li {
       display: inline;
     }
+}
+
+.round-corners {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+
+// Unequal Height Grid
+@mixin column-count($ct) {
+  -webkit-column-count: $ct;
+  -moz-column-count: $ct;
+  column-count: $ct;
+}
+
+.cards-container {
+  column-break-inside: avoid;
+  .card {
+    display: inline-block;
+    overflow: visible;
+  }
+}
+
+@media #{$small-and-down} {
+  .cards-container {
+    @include column-count(2);
+  }
+}
+@media #{$medium-and-up} {
+  .cards-container {
+    @include column-count(3);
+  }
+}
+@media #{$large-and-up} {
+  .cards-container {
+    @include column-count(4);
+  }
 }

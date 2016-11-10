@@ -1,27 +1,17 @@
 <section class="animated fadeIn">
-<h3 id="samples">Things we've made</h3>
 
-<div class="row">
-
-{% for image in site.static_files %}
-    {% if image.path contains 'assets/img/samples' %}
-      <div class="col s3 m4 l6">
-        <img class="responsive-img" src="{{ site.baseurl }}{{ image.path }}" alt="image" />
-      </div>
-    {% endif %}
-{% endfor %}
-</div>
+  <div class="row">
+    <div class="col s12 cards-container">
+    {% for image in site.static_files %}
+        {% if image.path contains 'assets/img/samples' %}
+            <div class="card-image">
+              {% assign title = {{image.path}} | remove: {{image.extname}} | remove: "/assets/img/samples/" %}
+              <!-- <span class="center">{{title}}</span> -->
+                <img class="responsive-img round-corners" data-featherlight="{{ site.baseurl }}{{ image.path }}" src="{{ site.baseurl }}{{ image.path }}" alt="{{image.path}}"/>
+            </div>
+        {% endif %}
+    {% endfor %}
+    </div>
+  </div>
 
 </section>
-
-<script>
-var options = [
-    {selector: '#samples', offset: 50, callback: function() {
-      $('#samples').addClass('animated fadeIn').css("opacity", "1");
-    } },
-    {selector: '#noid', offset: 50, callback: function() {
-      $('#noid').addClass('animated fadeIn').css("opacity", "1");
-    } }
-  ];
-  Materialize.scrollFire(options);
-</script>
