@@ -1,17 +1,12 @@
 <section class="animated fadeIn">
-
-  <div class="row">
-    <div class="col s12 cards-container">
+    <div class="cards-container">
     {% for image in site.static_files %}
         {% if image.path contains 'assets/img/samples' %}
             <div class="card-image">
               {% assign title = {{image.path}} | remove: {{image.extname}} | remove: "/assets/img/samples/" %}
-              <!-- <span class="center">{{title}}</span> -->
                 <img class="responsive-img round-corners" data-featherlight="{{ site.baseurl }}{{ image.path }}" src="{{ site.baseurl }}{{ image.path }}" alt="{{image.path}}"/>
             </div>
         {% endif %}
     {% endfor %}
     </div>
-  </div>
-
 </section>
