@@ -1,12 +1,21 @@
-<section class="animated fadeIn">
-    <div class="cards-container">
+<section class="animated fadeIn" data-featherlight-gallery data-featherlight-filter="img">
+    <div class="cards-container" >
     {% for image in site.static_files %}
         {% if image.path contains 'assets/img/samples' %}
             <div class="card-image">
               {% assign title = {{image.path}} | remove: {{image.extname}} | remove: "/assets/img/samples/" %}
-                <img class="responsive-img round-corners" data-featherlight="{{ site.baseurl }}{{ image.path }}" src="{{ site.baseurl }}{{ image.path }}" alt="{{image.path}}"/>
+                <img class="responsive-img round-corners gallery" data-featherlight="{{ site.baseurl }}{{ image.path }}" src="{{ site.baseurl }}{{ image.path }}" alt="{{image.path}}"/>
             </div>
         {% endif %}
     {% endfor %}
     </div>
 </section>
+
+<script>
+$('img.gallery').featherlightGallery({
+  previousIcon: '&#9664;',     /* Code that is used as previous icon */
+  nextIcon: '&#9654;',         /* Code that is used as next icon */
+  galleryFadeIn: 100,          /* fadeIn speed when slide is loaded */
+  galleryFadeOut: 300
+});
+</script>
