@@ -157,6 +157,12 @@ $member-bio-height: 350px;
   border-radius: 10px;
 }
 
+.button-hover-dark {
+  input:hover {
+   background-color: black;
+ }
+}
+
 
 // Unequal Height Grid
 @mixin column-count($ct) {
