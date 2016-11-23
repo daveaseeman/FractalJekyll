@@ -25,6 +25,7 @@ html{
 h1, h2, h3, h4, h5, h6 {
   font-family: $head-font;
 	font-weight: $head-font-weight;
+  color: $brand-color;
   letter-spacing: .1rem;
 	line-height: 1.1;
   text-transform: uppercase;

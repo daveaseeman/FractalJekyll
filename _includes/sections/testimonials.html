@@ -6,7 +6,6 @@
     <a class="carousel-item" href="#{{testimonial.path}}!">
       <blockquote>{% capture markdown %}{% include _markdown/_testimonials/{{testimonial.path}}.md %}{% endcapture %}{{ markdown | markdownify }}
       {%if testimonial.name %}{{testimonial.name}}{% endif %}{%if testimonial.company %}, {{testimonial.company}}{% endif %}</blockquote>
-      <img class="avatar" src="/assets/img/testimonials/{{testimonial.path}}.jpg" />
     </a>
     {% endfor %}
 </div>

@@ -51,7 +51,7 @@ $member-bio-height: 350px;
 }
 
 .div-bar {
-  border-left: 0.5rem solid $brand-color;
+  border-left: 0.25rem solid $brand-color;
   margin: 2rem auto;
 }
 
@@ -76,7 +76,7 @@ $member-bio-height: 350px;
 #footer {
   padding-top: 1rem;
   color: $background-color;
-  background: black;
+  background: $brand-color;
   padding-bottom: 0.25rem;
   a {
     @extend .white-text;
@@ -121,8 +121,18 @@ $member-bio-height: 350px;
   opacity:0.95;
 }
 
+.nav-menu {
+  color:$brand-color;
+  margin-right:1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .nav-font {
-  color: black;
+  color: $brand-color;
+  a {
+    color:$brand-color;
+  }
 }
 
 #navbar-logo {
@@ -181,16 +191,16 @@ $member-bio-height: 350px;
 
 @media #{$small-and-down} {
   .cards-container {
-    @include column-count(2);
+    @include column-count(1);
   }
 }
 @media #{$medium-and-up} {
   .cards-container {
-    @include column-count(3);
+    @include column-count(2);
   }
 }
 @media #{$large-and-up} {
   .cards-container {
-    @include column-count(4);
+    @include column-count(3);
   }
 }
