@@ -143,7 +143,7 @@ $member-bio-height: 350px;
   margin-bottom: $navbar-height-mobile*.125;
   @media #{$medium-and-up} {
     height: $navbar-height*.75;
-    padding-left: $navbar-height*.25;
+    padding-left: $navbar-height*.5;
     margin-top: $navbar-height*.125;
     margin-bottom: $navbar-height*.125;
 
