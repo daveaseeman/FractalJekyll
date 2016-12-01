@@ -62,7 +62,8 @@
   cursor: pointer;
 
   &:hover {
-    background-color: $button-raised-background-hover;
+    // background-color: $button-raised-background-hover;
+    background-color: black;
     @extend .z-depth-1;
   }
 }

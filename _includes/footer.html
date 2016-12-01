@@ -12,14 +12,15 @@
               <div class="list-left">
                 <ul class="left">
                   {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == true %}
-                  <li><a href="mailto:team@fractalhardware.com?subject=Can you help with our project"><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</a></li>
+                  {% assign link = client_types.name | downcase | replace: ' ', '_' %}
+                  <li><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</li>
                   {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
                   {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == false %}
-                  <li><a href="mailto:team@fractalhardware.com?subject=Can you help with our project"><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</a></li>
+                  <li><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</li>
                   {% endif %}{% endfor %}
                 </ul>
               </div>
@@ -27,33 +28,6 @@
           </li>
         </ul>
       </div>
-
-      <!-- <div class="col s12 m4">
-        <ul class="collapsible" data-collapsible="expandable">
-          <li>
-            <div class="collapsible-header active">
-              <h6 class="center eyebrow">Contact Us</h6>
-            </div>
-            <div class="collapsible-body">
-              <div class="list-left">
-                <ul class="left">
-                  {% assign contacts = site.data.contacts %}{% for contact in contacts %}
-                  <li><a href='tel:{{contact.phone}}'><i class='fa fa-phone fa-fw' aria-hidden='true'></i> {{contact.name}}</a></li>
-                  {% endfor %}
-                </ul>
-              </div>
-              <div class="list-right">
-                <ul class="left">
-                  {% assign contacts = site.data.contacts %}{% for contact in contacts %}
-                  <li><a href='mailto:{{contact.email}}?subject=Hey {{contact.name}}!'><i class='fa fa-envelope fa-fw' aria-hidden='true'></i> {{contact.name}}</a></li>
-                  {% endfor %}
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div> -->
-
 
       <div class="col s12 m6">
         <ul class="collapsible" data-collapsible="expandable">

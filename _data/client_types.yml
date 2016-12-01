@@ -10,7 +10,19 @@
   side: true
 - name: Inventors
   icon: lightbulb-o
-  side: false
+  side: true
 - name: Innovators
   icon: cog
+  side: true
+- name: Consumer Electronics
+  icon: gamepad
+  side: false
+- name: Medical Devices
+  icon: heartbeat
+  side: false
+- name: Internet of Things (IoT)
+  icon: wifi
+  side: false
+- name: Manufacturing Support
+  icon: industry
   side: false
