@@ -6,7 +6,7 @@
   icon: line-chart
   side: true
 - name: Entrepreneurs
-  icon: briefcase
+  icon: handshake-o
   side: true
 - name: Inventors
   icon: lightbulb-o
