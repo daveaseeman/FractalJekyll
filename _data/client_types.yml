@@ -11,9 +11,6 @@
 - name: Inventors
   icon: lightbulb-o
   side: true
-- name: Innovators
-  icon: cog
-  side: true
 - name: Consumer Electronics
   icon: gamepad
   side: false
