@@ -50,6 +50,14 @@ $member-bio-height: 350px;
   }
 }
 
+.member-contact {
+  color: $brand-color;
+  margin: 0 1rem;
+  a {
+    color: $brand-color;
+  }
+}
+
 .div-bar {
   border-left: 0.25rem solid $brand-color;
   margin: 2rem auto;

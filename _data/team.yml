@@ -2,11 +2,17 @@
   role: Electrical Engineer
   photo: mitch.jpg
   bio: mitch.md
+  phone: 630-200-7299
+  email: mitch@fractalhardware.com
 - name: Dave Seeman
   role: Mechanical Engineer
   photo: dave.jpg
   bio: dave.md
+  phone: 615-930-1206
+  email: dave@fractalhardware.com
 - name: Evan Reese
   role: Industrial Designer
   photo: evan.jpg
+  phone: 615-930-1198
+  email: evan@fractalhardware.com
   bio: evan.md

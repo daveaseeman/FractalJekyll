@@ -1,22 +1,19 @@
 <section class="animated fadeIn">
-<h3 id="testimonials">What Other's are Saying</h3>
-<div class="carousel">
-  {% assign testimonials=site.data.testimonials %}
-  {% for testimonial in testimonials %}
-    <a class="carousel-item" href="#{{testimonial.path}}!">
-      <blockquote>{% capture markdown %}{% include _markdown/_testimonials/{{testimonial.path}}.md %}{% endcapture %}{{ markdown | markdownify }}
-      {%if testimonial.name %}{{testimonial.name}}{% endif %}{%if testimonial.company %}, {{testimonial.company}}{% endif %}</blockquote>
-    </a>
-    {% endfor %}
-</div>
+  <h3 id="testimonials">What Other's are Saying</h3>
+  <div class="row">
+    {% assign testimonials=site.data.testimonials %}
+    {% for testimonial in testimonials %}
+    <div class="col s12 m6 l4">
+      <i class="fa fa-quote-left" aria-hidden="true"></i>
+      {% capture markdown %}{% include _markdown/_testimonials/{{testimonial.path}}.md %}{% endcapture %}
+      {{ markdown | markdownify }}
+      {%if testimonial.name %}{{testimonial.name}}{% endif %}
+      {%if testimonial.company %}, {{testimonial.company}}{% endif %}
+    </div>
+      {% endfor %}
+  </div>
 
 </section>
-
-<script>
-$(document).ready(function(){
-      $('.carousel').carousel();
-    });
-</script>
 
 <script>
 var options = [

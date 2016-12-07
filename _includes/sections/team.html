@@ -11,6 +11,11 @@
           <h5 class="member-name">{{member.name}}</h5>
         </div>
         <div class="collapsible-body">
+          <!-- <div class="center">
+            <h6>Contact {{member.name | truncatewords: 1, ""}}</h6>
+            <a class="member-contact" href="tel:{{member.phone}}"><i class="fa fa-phone" aria-hidden="true"></i> call</a>
+            <a class="member-contact" href="mailto:{{member.email}}"><i class="fa fa-envelope" aria-hidden="true"></i> email</a>
+          </div> -->
           <div class="member-bio">
             {% capture markdown %}{% include _markdown/{{member.bio}} %}{% endcapture %}{{ markdown | markdownify }}
           </div>
