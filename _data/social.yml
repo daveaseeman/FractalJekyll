@@ -23,11 +23,11 @@
   icon: angellist
   url: https://angel.co/fractalhardware
   side: false
-- name: Medium
-  icon: medium
-  url: https://medium.com/fractalhardware
-  side: false
+# - name: Medium
+#   icon: medium
+#   url: https://medium.com/fractalhardware
+#   side: false
 - name: Google+
   icon: google-plus
-  url: https://plus.google.com/u/0/b/113550490910957229411/113550490910957229411
+  url: https://plus.google.com/+Fractalhardware
   side: false
