@@ -27,6 +27,10 @@
 #   icon: medium
 #   url: https://medium.com/fractalhardware
 #   side: false
+- name: Reddit
+  icon: reddit-alien
+  url: https://www.reddit.com/user/FractalHardware/
+  side: false
 - name: Google+
   icon: google-plus
   url: https://plus.google.com/+Fractalhardware
