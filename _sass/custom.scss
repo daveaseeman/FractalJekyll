@@ -81,6 +81,11 @@ $member-bio-height: 350px;
   color: $background-color;
 }
 
+.brand-color-inverse {
+  background: $background-color;
+  color: $brand-color;
+}
+
 #footer {
   padding-top: 1rem;
   color: $background-color;
