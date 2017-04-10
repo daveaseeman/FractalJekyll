@@ -6,7 +6,10 @@ email: team@fractalhardware.com
 description: "Fractal uses mechanical, electrical, and industrial design to prototype and develop products for mass production. We are as crazy about great client experiences as we are about designing disruptive products"
 url: http://fractalhardware.com
 analytics: UA-81873109-1
-logo: /assets/img/black-logo.svg
+type: image/png
+logo: /assets/img/fractal-logo.svg
+logo-square: /assets/img/Fractal-Square-Color.png
+logo-banner: /assets/img/Fractal-Banner-Color.png
 
 # Build settings
 markdown: kramdown
