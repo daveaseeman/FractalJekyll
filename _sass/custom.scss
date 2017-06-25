@@ -82,7 +82,7 @@ $member-bio-height: 350px;
 }
 
 .brand-color-inverse {
-  background: $background-color;
+  // background: $background-color;
   color: $brand-color;
 }
 
@@ -269,6 +269,35 @@ $member-bio-height: 350px;
   .grid-sizer,.grid-item {
     width: 50%;
   }
+}
+
+.scroll-item {
+  vertical-align: top;
+  min-width: 250px;
+  max-width: 500px;
+  background: $brand-color;
+  border: 1px solid $brand-color;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.scroll {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.scroll-text {
+    margin: 0 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: normal;
+    word-wrap: normal;
+    a {
+        color: white;
+        font-style: italic;
+    }
 }
 
 // LOADER
