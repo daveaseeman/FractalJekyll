@@ -1,0 +1,44 @@
+<section class="animated fadeIn">
+    <div id="testimonials">
+        <h1 id="clients">What Clients are Saying</h1>
+        <p class="flow-text">These are excerpts of testimonials from our clients. Scroll right to read more. Their words, not ours.</p>
+        <ul class="scroll">
+            {% assign testimonials=site.data.testimonials-short %}
+            {% for testimonial in testimonials %}
+            <li class="scroll-item">
+                {% assign star=testimonial.stars %}
+                {% if star==5 %}
+                <h2 class="center-align">
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                </h2>
+                {% endif %}
+                {% if star==4 %}
+                <h2 class="center-align">
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star brand-color" aria-hidden="true"></i>
+                    <i class="fa fa-star-o brand-color" aria-hidden="true"></i>
+                </h2>
+                {% endif %}
+                {% if testimonial.text %}<p class="scroll-text brand-color"><i class="fa fa-quote-left brand-color" aria-hidden="true"></i> {{testimonial.text}}</p>{% endif %}
+                {% if testimonial.name %}<p class="scroll-text brand-color center-align">- {{testimonial.name}}{% if testimonial.company %}, {{testimonial.company}}{% endif %}</p>{% endif %}
+                {% if testimonial.url %}<p class="scroll-text brand-color center-align"><a href='{{testimonial.url}}'>read full review</a></p>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+<script>
+var options = [
+    {selector: '#testimonials', offset: 50, callback: function() {
+      $('#testimonials').addClass('animated fadeIn').css("opacity", "1");
+    } },
+  ];
+  Materialize.scrollFire(options);
+</script>

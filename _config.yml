@@ -7,13 +7,31 @@ description: "Fractal uses mechanical, electrical, and industrial design to prot
 url: http://fractalhardware.com
 analytics: UA-81873109-1
 type: image/png
-logo: /assets/img/fractal-logo.svg
-logo-square: /assets/img/Fractal-Square-Color.png
-logo-banner: /assets/img/Fractal-Banner-Color.png
+logo: /assets/brand/fractal-logo.svg
+logo-square: /assets/brand/Fractal-Square-Color.png
+logo-banner: /assets/brand/Fractal-Banner-Color.png
 
 # Build settings
 markdown: kramdown
 permalink: /posts/:title/
-plugins:
+gems:
+  - font-awesome-sass
+  - uglifier
+  - sass
   - jemoji
   - jekyll-sitemap
+  - jekyll-assets
+
+assets:
+  compress:
+    css: true
+    js: true
+  autowrite: true
+  assets:
+    - "*.png"
+    - "*.svg"
+    - "*.jpg"
+  sources:
+    - _assets/css
+    - _assets/img
+    - _assets/js

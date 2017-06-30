@@ -1,0 +1,30 @@
+<div id="grid-container" class="grid-masonry">
+    <div class="grid-sizer"></div>
+    {% assign samples=site.data.samples %}
+    {% for sample in samples %}
+    <img class="grid-item gallery" data-featherlight="{% asset_path samples/{{sample.file}} %}" src="{% asset_path samples/{{sample.file}} %}" alt="{{sample.alt}}"/>
+    {% endfor %}
+</div>
+
+<script>
+// with jQuery
+var $container = $('#grid-container');
+
+// initialize Masonry after all images have loaded
+$container.imagesLoaded( function() {
+    $container.masonry( {
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-sizer',
+        isFitWidth: true
+    });
+});
+</script>
+
+<script>
+$('img.gallery').featherlightGallery({
+    previousIcon: '&#9664;',     /* Code that is used as previous icon */
+    nextIcon: '&#9654;',         /* Code that is used as next icon */
+    galleryFadeIn: 100,          /* fadeIn speed when slide is loaded */
+    galleryFadeOut: 300
+});
+</script>
