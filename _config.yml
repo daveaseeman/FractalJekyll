@@ -14,7 +14,7 @@ logo-banner: /assets/brand/Fractal-Banner-Color.png
 # Build settings
 markdown: kramdown
 permalink: /posts/:title/
-gems:
+plugins:
   - font-awesome-sass
   - uglifier
   - sass
