@@ -22,6 +22,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-assets
 
+collections:
+  public:
+    output: true
+    permalink: /
+
 assets:
   compress:
     css: true

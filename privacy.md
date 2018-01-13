@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Fractal Hardware Privacy Policy
+permalink: /privacy
 ---
 
 This privacy policy discloses the privacy practices for {{site.url}} and its subdomains. This privacy policy applies solely to information collected by this web site. It will notify you of the following:
