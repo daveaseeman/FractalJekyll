@@ -10,35 +10,36 @@
 
         <div class="col s12 m6 l3">
           <div class="input-field">
-            <label for="mce-FNAME">First Name </label>
-            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+            <label for="mce-FNAME">First Name *</label>
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
           </div>
         </div>
         <div class="col s12 m6 l3">
           <div class="input-field">
-            <label for="mce-LNAME">Last Name </label>
-            <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+            <label for="mce-LNAME">Last Name *</label>
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
           </div>
         </div>
 
         <div class="col s12 m6 offset-m6 l3 offset-l6">
           <div class="input-field">
-            <label for="mce-EMAIL">Email Address </label>
+            <label for="mce-EMAIL">Email Address *</label>
             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
           </div>
         </div>
         <div class="col s12 m6 offset-m6 l3">
           <div class="input-field">
-            <label for="mce-PHONE">Phone Number </label>
-            <input type="text" name="PHONE" class="" value="" id="mce-PHONE">
+            <label for="mce-PHONE">Phone Number *</label>
+            <input type="tel" name="PHONE" class="required" value="" id="mce-PHONE" minlength="7" maxlength="20">
           </div>
         </div>
 
         <div class="col s12 m6 offset-m6 l6 offset-l6">
           <div class="input-field">
-            <label for="mce-MESSAGE">How Can We Help?</label>
-            <input type="text" value="" name="MESSAGE" class="required" id="mce-MESSAGE" maxlength="250">
+            <label for="mce-MESSAGE">How can we help? *</label>
+            <input type="text" value="" name="MESSAGE" class="required" id="mce-MESSAGE" maxlength="250" onkeyup="countChar(this)">
           </div>
+          <div style="margin-top:0;padding-top:0;font-size:small;" id="charNum"></div>
         </div>
 
         <div class="col s12 center m2 offset-m8">
@@ -66,4 +67,11 @@ var options = [
     } },
   ];
   Materialize.scrollFire(options);
+</script>
+
+<script>
+      function countChar(val) {
+        var len = val.value.length;
+        $('#charNum').text(len + "/ 250");
+      };
 </script>
