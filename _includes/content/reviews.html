@@ -1,0 +1,54 @@
+<section class="animated fadeIn">
+    <h1 id="clients">What Clients Say</h1>
+<div id="box-container">
+    {% assign testimonials=site.data.testimonials-short %}
+    {% assign count = 0 %}
+    {% for testimonial in testimonials %}
+    {% assign count = count | plus:1 %}
+    <div class="boxes"{% if count != 1 %} style="display:none;"{% endif %}>
+        {% assign star=testimonial.stars %}
+        {% if star==5 %}
+        <h2 class="center-align">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </h2>
+        {% endif %}
+        {% if star==4 %}
+        <h2 class="center-align">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"></i>
+        </h2>
+        {% endif %}
+        {% if testimonial.text %}<p class=""><i class="fa fa-quote-left" aria-hidden="true"></i> {{testimonial.text}}</p>{% endif %}
+        {% if testimonial.name %}<p class="center-align">- {{testimonial.name}}{% if testimonial.company %}, {{testimonial.company}}{% endif %}</p>{% endif %}
+        {% comment %}{% if testimonial.url %}<p class="center-align"><a href='{{testimonial.url}}'>read full review</a></p>{% endif %}{% endcomment %}
+    </div>
+    {% endfor %}
+</div>
+</section>
+<div class="center-align">
+    <a style="margin-top: 15px;" id="nextButton" class="center-align button-hover-dark btn brand-color">Next Review</a>
+</div>
+
+
+<script>
+
+$('#nextButton').click(function() {
+    var visibleBox = $('#box-container .boxes:visible');
+    visibleBox.hide();
+    var nextToShow = $(visibleBox).next('.boxes:hidden');
+    if (nextToShow.length > 0) {
+        nextToShow.show();
+    } else {
+        $('#box-container .boxes:hidden:first').show();
+    }
+    return false;
+});
+
+</script>

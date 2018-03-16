@@ -13,7 +13,7 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <link rel="icon" type="image/png" href="favicon.png" />
-  
+
   <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
@@ -39,9 +39,12 @@
   <meta property="og:url" content="{{ site.url }}" />
   <meta property="og:image" content="{{ site.url }}{{ site.logo-square }}" />
 
+  {% include services/hubspot.html %}
   {% include services/mouseflow.html %}
   {% include services/pixel.html %}
   {% include services/analytics.html %}
+  {% comment %}
   {% include services/smallchat.html %}
+  {% endcomment %}
 
 </head>
