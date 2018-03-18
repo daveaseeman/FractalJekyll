@@ -1,0 +1,20 @@
+- name: Consumer Electronics
+  icon: gamepad
+  side: L
+  show: true
+- name: Medical Devices
+  icon: heartbeat
+  side: L
+  show: true
+- name: Internet of Things (IoT)
+  icon: wifi
+  side: L
+  show: true
+- name: Rapid Prototyping
+  icon: bolt
+  side: L
+  show: true
+- name: Manufacturing
+  icon: industry
+  side: L
+  show: true

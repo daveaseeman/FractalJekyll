@@ -1,39 +1,43 @@
 <section class="animated fadeIn">
     <h1 id="clients">What Clients Say</h1>
 <div id="box-container">
-    {% assign testimonials=site.data.testimonials-short %}
+    {% assign reviews=site.data.reviews %}
     {% assign count = 0 %}
-    {% for testimonial in testimonials %}
+    {% for review in reviews %}
     {% assign count = count | plus:1 %}
-    <div class="boxes"{% if count != 1 %} style="display:none;"{% endif %}>
-        {% assign star=testimonial.stars %}
-        {% if star==5 %}
-        <h2 class="center-align">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-        </h2>
-        {% endif %}
-        {% if star==4 %}
-        <h2 class="center-align">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <i class="fa fa-star-o" aria-hidden="true"></i>
-        </h2>
-        {% endif %}
-        {% if testimonial.text %}<p class=""><i class="fa fa-quote-left" aria-hidden="true"></i> {{testimonial.text}}</p>{% endif %}
-        {% if testimonial.name %}<p class="center-align">- {{testimonial.name}}{% if testimonial.company %}, {{testimonial.company}}{% endif %}</p>{% endif %}
-        {% comment %}{% if testimonial.url %}<p class="center-align"><a href='{{testimonial.url}}'>read full review</a></p>{% endif %}{% endcomment %}
+    <div class="boxes valign-wrapper"{% if count != 1 %} style="display:none;"{% endif %}>
+        <div>
+            {% assign star=review.stars %}
+            {% if star==5 %}
+            <h2 class="center-align">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+            </h2>
+            {% endif %}
+            {% if star==4 %}
+            <h2 class="center-align">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fal fa-star" aria-hidden="true"></i>
+            </h2>
+            {% endif %}
+            <div style="padding: 10px;">
+            {% if review.text %}<p class="flow-text left-align"><i class="fal fa-quote-left" aria-hidden="true"></i> {{review.text}}<i class="fal fa-quote-right" aria-hidden="true"></i></p>{% endif %}
+            {% if review.name %}<p class="flow-text right-align">- <b>{{review.name}}</b>{% if review.company %}, <b><i>{{review.company}}</i></b>{% endif %}</p>{% endif %}
+            {% if review.url %}<p class="right-align"><small><a href='{{review.url}}'>read full review</a></small></p>{% endif %}
+            </div>
+        </div>
     </div>
     {% endfor %}
 </div>
 </section>
 <div class="center-align">
-    <a style="margin-top: 15px;" id="nextButton" class="center-align button-hover-dark btn brand-color">Next Review</a>
+    <a style="margin-top: 15px;" id="nextButton" class="center-align btn brand-color">Next Review</a>
 </div>
 
 

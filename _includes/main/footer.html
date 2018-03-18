@@ -2,65 +2,109 @@
   <div class="container">
     <div class="row" style="margin-bottom:2rem;" id="footer-row">
 
-      <div class="col s12 m6">
+        <div class="col s12 m4">
+          <ul class="collapsible" data-collapsible="expandable">
+            <li>
+              <div class="collapsible-header active">
+                <h4 class="center eyebrow">Our Industries</h4>
+              </div>
+              <div class="collapsible-body">
+                  <ul>
+                      {% assign services = site.data.services %}{% for service in services %}{% if service.show == true %}
+                      <li><i class="fal fa-{{service.icon}} fa-fw" aria-hidden="true"></i> {{service.name}}</li>
+                      {% endif %}{% endfor %}
+                  </ul>
+                <!-- <div class="list-left">
+                  <ul class="left">
+                    {% assign services = site.data.services %}{% for service in services %}{% if service.show == true and service.side == "L" %}
+                    <li><a href="{{service.url}}"><i class="fal fa-{{service.icon}} fa-fw" aria-hidden="true"></i> {{service.name}}</a></li>
+                    {% endif %}{% endfor %}
+                  </ul>
+                </div>
+                <div class="list-right">
+                  <ul class="left">
+                    {% for service in services %}{% if service.show == true and  service.side == "R" %}
+                    <li><a href="{{service.url}}"><i class="fal fa-{{service.icon}} fa-fw" aria-hidden="true"></i> {{service.name}}</a></li>
+                    {% endif %}{% endfor %}
+                  </ul>
+              </div> -->
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      <div class="col s12 m4">
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
-              <h4 class="center eyebrow">Who We Help</h4>
+              <h4 class="center eyebrow">Businesses We Serve</h4>
             </div>
             <div class="collapsible-body">
-              <div class="list-left">
+                <ul>
+                  {% assign personas = site.data.personas %}{% for persona in personas %}
+                  {% assign link = personas.name | downcase | replace: ' ', '_' %}
+                  <li><i class="fal fa-{{persona.icon}} fa-fw" aria-hidden="true"></i> {{persona.name}}</li>
+                  {% endfor %}
+                </ul>
+              <!-- <div class="list-left">
                 <ul class="left">
-                  {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == true %}
-                  {% assign link = client_types.name | downcase | replace: ' ', '_' %}
-                  <li><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</li>
+                  {% assign personas = site.data.personas %}{% for persona in personas %}{% if persona.side == "L" %}
+                  {% assign link = personas.name | downcase | replace: ' ', '_' %}
+                  <li><i class="fal fa-{{persona.icon}} fa-fw" aria-hidden="true"></i> {{persona.name}}</li>
                   {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                  {% assign client_types = site.data.client_types %}{% for type in client_types %}{% if type.side == false %}
-                  <li><i class="fa fa-{{type.icon}} fa-fw" aria-hidden="true"></i> {{type.name}}</li>
+                  {% assign personas = site.data.personas %}{% for persona in personas %}{% if persona.side == "R" %}
+                  <li><i class="fal fa-{{persona.icon}} fa-fw" aria-hidden="true"></i> {{persona.name}}</li>
                   {% endif %}{% endfor %}
                 </ul>
-              </div>
+            </div> -->
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="col s12 m6">
+      <div class="col s12 m4">
         <ul class="collapsible" data-collapsible="expandable">
           <li>
             <div class="collapsible-header active">
-              <h4 class="center eyebrow">Follow Us</h4>
+              <h4 class="center eyebrow">Ways to Learn More</h4>
             </div>
             <div class="collapsible-body">
-              <div class="list-left">
                 <ul class="left">
-                  {% assign social = site.data.social %}{% for account in social %}{% if account.side == true %}
-                  <li><a href="{{account.url}}"><i class="fa fa-{{account.icon}} fa-fw" aria-hidden="true"></i> {{account.name}}</a></li>
+                  {% assign socials = site.data.socials %}{% for social in socials %}{% if social.show == true %}
+                  <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
+                  {% endif %}{% endfor %}
+                </ul>
+              <!-- <div class="list-left">
+                <ul class="left">
+                  {% assign socials = site.data.socials %}{% for social in socials %}{% if social.show == true and social.side == "L" %}
+                  <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
                   {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                  {% for account in social %}{% if account.side == false %}
-                  <li><a href="{{account.url}}"><i class="fa fa-{{account.icon}} fa-fw" aria-hidden="true"></i> {{account.name}}</a></li>
+                  {% for social in socials %}{% if social.show == true and  social.side == "R" %}
+                  <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
                   {% endif %}{% endfor %}
                 </ul>
-              </div>
+            </div> -->
             </div>
           </li>
         </ul>
       </div>
-    </div>
+
+  </div>
+
 
     <ul class="center" style="margin:0 auto; font-size:small;" id="credits">
       <li><img id="tristar"></img></li>
       <li>Made in Tennessee by the folks at {{ site.title }}</a></li>
       <li>{{ site.company }} | <a href="tel:{{ site.phone }}">{{ site.phone }}</a> | <a href="https://goo.gl/maps/UDcHPu2i2gy">{{ site.address }}</a></li>
-      <li>Content <i class="fa fa-copyright"></i> 2016-{{ site.time | date: '%Y' }} {{ site.company }} | <a href="/privacy">Privacy Policy</a></li>
+      <li>Content <i class="fal fa-copyright"></i> 2016-{{ site.time | date: '%Y' }} {{ site.company }} | <a href="/privacy">Privacy Policy</a></li>
     </ul>
 
   </div>

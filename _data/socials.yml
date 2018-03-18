@@ -2,37 +2,45 @@
 - name: Instagram
   icon: instagram
   url: https://www.instagram.com/fractalhardware/
-  side: true
+  side: L
+  show: true
 - name: Medium
   icon: medium
   url: https://medium.com/fractalhardware
-  side: true
+  side: L
+  show: true
 - name: Facebook
   icon: facebook
   url: https://www.facebook.com/fractalhardware/
-  side: true
+  side: L
+  show: true
 - name: Twitter
   icon: twitter
   url: https://twitter.com/FractalHardware
-  side: true
+  side: R
+  show: true
 - name: LinkedIn
   icon: linkedin
   url: https://www.linkedin.com/company/fractalhardware
-  side: true
+  side: R
+  show: true
 - name: GitHub
   icon: github-alt
   url: https://github.com/FractalHardware
-  side: false
+  side: R
+  show: false
 - name: AngelList
   icon: angellist
   url: https://angel.co/fractalhardware
-  side: false
-
+  side: R
+  show: false
 - name: Reddit
   icon: reddit-alien
   url: https://www.reddit.com/user/FractalHardware/
-  side: false
+  side: R
+  show: false
 - name: Google+
   icon: google-plus
   url: https://plus.google.com/+Fractalhardware
-  side: false
+  side: R
+  show: false

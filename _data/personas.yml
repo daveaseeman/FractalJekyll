@@ -1,0 +1,12 @@
+- name: Startups
+  icon: chart-line
+  side: L
+- name: Inventors
+  icon: lightbulb
+  side: L
+- name: Entrepreneurs
+  icon: handshake
+  side: L
+- name: Corporations
+  icon: building
+  side: L
