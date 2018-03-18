@@ -1,5 +1,5 @@
 <section class="animated fadeIn">
-    <h1 id="clients">What Clients Say</h1>
+    <h1 id="reviews">What Clients Say</h1>
 <div id="box-container">
     {% assign reviews=site.data.reviews %}
     {% assign count = 0 %}
@@ -54,5 +54,12 @@ $('#nextButton').click(function() {
     }
     return false;
 });
+
+var options = [
+    {selector: '#reviews', offset: 50, callback: function() {
+      $('#reviews').addClass('animated fadeIn').css("opacity", "1");
+    } },
+  ];
+  Materialize.scrollFire(options);
 
 </script>
