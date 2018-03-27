@@ -37,12 +37,12 @@
 </div>
 </section>
 <div class="center-align">
+    <a style="margin-top: 15px;" id="prevButton" class="center-align btn brand-color">Previous Review</a>
     <a style="margin-top: 15px;" id="nextButton" class="center-align btn brand-color">Next Review</a>
 </div>
 
 
 <script>
-
 $('#nextButton').click(function() {
     var visibleBox = $('#box-container .boxes:visible');
     visibleBox.hide();
@@ -55,11 +55,22 @@ $('#nextButton').click(function() {
     return false;
 });
 
+$('#prevButton').click(function() {
+    var visibleBox = $('#box-container .boxes:visible');
+    visibleBox.hide();
+    var prevToShow = $(visibleBox).prev('.boxes:hidden');
+    if (prevToShow.length > 0) {
+        prevToShow.show();
+    } else {
+        $('#box-container .boxes:hidden:last').show();
+    }
+    return false;
+});
+
 var options = [
     {selector: '#reviews', offset: 50, callback: function() {
       $('#reviews').addClass('animated fadeIn').css("opacity", "1");
     } },
   ];
   Materialize.scrollFire(options);
-
 </script>
