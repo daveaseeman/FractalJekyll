@@ -7,11 +7,16 @@
     <meta http-equiv="refresh" content="5; url=/">
   {% endif %}
 
+  {% comment %}
   {% css main %}
   {% js main %}
+  {% endcomment %}
 
-  <script defer src="https://pro.fontawesome.com/releases/v5.0.8/js/light.js" integrity="sha384-mfSnp84URDGC1t+cg63LgVKwEs63ulRUpjNneyDZMGMAE9ZKUNZ85rMBMHucGLYP" crossorigin="anonymous"></script>
-  <script defer src="https://pro.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-Ht3fAeBiX/rVmKVyMwONAIIt0aRoPzZgq1FzdRgR9zFo+Kcd8YDwUbFlTItfaYW4" crossorigin="anonymous"></script>
+  {% asset main.css text/css %}
+  {% asset main.js application/javascript %}
+
+  <script  src="https://pro.fontawesome.com/releases/v5.0.8/js/light.js" integrity="sha384-mfSnp84URDGC1t+cg63LgVKwEs63ulRUpjNneyDZMGMAE9ZKUNZ85rMBMHucGLYP" crossorigin="anonymous"></script>
+  <script  src="https://pro.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-Ht3fAeBiX/rVmKVyMwONAIIt0aRoPzZgq1FzdRgR9zFo+Kcd8YDwUbFlTItfaYW4" crossorigin="anonymous"></script>
 
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -43,7 +48,7 @@
   <meta property="og:image" content="{{ site.url }}{{ site.logo-square }}" />
 
   {% include services/analytics.html %}
-  
+
   {% comment %}
   {% include services/smallchat.html %}
   {% include services/mouseflow.html %}

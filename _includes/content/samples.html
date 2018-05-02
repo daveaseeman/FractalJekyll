@@ -2,7 +2,7 @@
     <div class="grid-sizer"></div>
     {% assign samples=site.data.samples %}
     {% for sample in samples %}
-    <img class="grid-item gallery" onClick="fbq('track', 'ViewContent', {content_type: 'image', content_name: '{{sample.file}}',}););" data-featherlight="{% asset_path samples/{{sample.file}} %}" src="{% asset_path samples/{{sample.file}} %}" alt="{{sample.alt}}"/>
+    <img class="grid-item gallery" onClick="fbq('track', 'ViewContent', {content_type: 'image', content_name: '{{sample.file}}',}););" data-featherlight="{% asset samples/{{sample.file}} @path %}" src="{% asset samples/{{sample.file}} @path %}" alt="{{sample.alt}}"/>
     {% endfor %}
 </div>
 
