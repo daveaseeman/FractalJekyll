@@ -1,0 +1,12 @@
+- name: Project Inquiries
+  prefix: r
+  icon: question-circle
+  url: https://airtable.com/shraLdAFQYv70b3NV
+  side: R
+  show: true
+- name: Jobs and Internships
+  prefix: s
+  icon: users
+  url: https://airtable.com/shrAjpM58idh3VbDw
+  side: R
+  show: true

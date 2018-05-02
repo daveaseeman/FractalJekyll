@@ -307,3 +307,16 @@ $member-bio-height: 350px;
         background: $brand-color;
     }
 }
+
+#project-inquiry {
+    min-width: 150px;
+    position:fixed;
+    bottom:0;
+    margin-bottom: 15px;
+    right:0;
+    margin-right: 15px;
+    // left:50%;
+    // transform:translateX(-50%);
+    border:1px solid white;
+    z-index:999;
+}

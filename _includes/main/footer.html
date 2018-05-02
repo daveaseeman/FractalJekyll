@@ -72,26 +72,26 @@
             <div class="collapsible-header active">
               <h4 class="center eyebrow">Ways to Learn More</h4>
             </div>
-            <div class="collapsible-body">
+            <!--<div class="collapsible-body">
                 <ul class="left">
                   {% assign socials = site.data.socials %}{% for social in socials %}{% if social.show == true %}
                   <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
                   {% endif %}{% endfor %}
-                </ul>
-              <!-- <div class="list-left">
+              </ul>-->
+              <div class="list-left">
                 <ul class="left">
-                  {% assign socials = site.data.socials %}{% for social in socials %}{% if social.show == true and social.side == "L" %}
-                  <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
-                  {% endif %}{% endfor %}
+                    {% assign socials = site.data.socials %}{% for social in socials %}{% if social.show == true %}
+                    <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
+                    {% endif %}{% endfor %}
                 </ul>
               </div>
               <div class="list-right">
                 <ul class="left">
-                  {% for social in socials %}{% if social.show == true and  social.side == "R" %}
-                  <li><a href="{{social.url}}"><i class="fab fa-{{social.icon}} fa-fw" aria-hidden="true"></i> {{social.name}}</a></li>
-                  {% endif %}{% endfor %}
+                    {% assign links = site.data.links %}{% for link in links %}{% if link.show == true %}
+                    <li><a href="{{link.url}}"><i class="fa{{link.prefix}} fa-{{link.icon}} fa-fw" aria-hidden="true"></i> {{link.name}}</a></li>
+                    {% endif %}{% endfor %}
                 </ul>
-            </div> -->
+            </div>
             </div>
           </li>
         </ul>
