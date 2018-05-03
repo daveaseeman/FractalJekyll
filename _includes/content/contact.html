@@ -75,3 +75,13 @@ var options = [
         $('#charNum').text(len + "/ 250");
       };
 </script>
+
+<script>
+$('#mc-embedded-subscribe-form').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) {
+    e.preventDefault();
+    return false;
+  }
+});
+</script>
