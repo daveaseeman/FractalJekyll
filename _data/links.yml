@@ -3,10 +3,10 @@
   icon: question-circle
   url: https://airtable.com/shraLdAFQYv70b3NV
   side: R
-  show: true
+  show: false
 - name: Jobs and Internships
   prefix: s
   icon: users
-  url: https://airtable.com/shrAjpM58idh3VbDw
+  url: https://airtable.com/shrpNI4sqfHz9fzHS
   side: R
   show: true
