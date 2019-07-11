@@ -1,0 +1,47 @@
+<!-- <div id="mc_embed_signup"> -->
+  <!-- <form action="//fractalhardware.us1.list-manage.com/subscribe/post?u=8953c3719c271d3388c6276d1&amp;id=4171e26846" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate> -->
+    <!-- <div id="mc_embed_signup_scroll"> -->
+
+      <div class="row" id="contact-row" style="background-color:#fff;">
+
+        <div class="col s12 m6">
+          <h1 id="talk">LET'S TALK</h1>
+        </div>
+
+        <div class="col s12">
+            <a href="mailto:sales1@fractalhardware.com?subject=Project%20Inquiry&body=What%20are%20you%20working%20on%3F" class="btn brand-pop" style="">Send us a Message</a>
+        </div>
+
+      </div>
+    <!-- </div> -->
+
+  <!-- </form> -->
+<!-- </div> -->
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='PHONE';ftypes[3]='phone';fnames[4]='MESSAGE';ftypes[4]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+<script>
+var options = [
+    {selector: '#contact-row', offset: 50, callback: function() {
+      $('#contact-row').addClass('animated fadeIn').css("opacity", "1");
+    } },
+  ];
+  Materialize.scrollFire(options);
+</script>
+
+<script>
+      function countChar(val) {
+        var len = val.value.length;
+        $('#charNum').text(len + "/ 250");
+      };
+</script>
+
+<script>
+$('#mc-embedded-subscribe-form').on('keyup keypress', function(e) {
+  var keyCode = e.keyCode || e.which;
+  if (keyCode === 13) {
+    e.preventDefault();
+    return false;
+  }
+});
+</script>
